@@ -2,42 +2,27 @@ package com.link.easyai.test.task.createTicket.dto;
 
 import com.link.easyai.starter.engine.annotation.AiDependsOn;
 import com.link.easyai.starter.engine.annotation.AiField;
-import com.link.easyai.starter.engine.annotation.AiTask;
+import com.link.easyai.starter.engine.annotation.AiTaskParam;
 import com.link.easyai.starter.engine.annotation.AiValid;
-import com.link.easyai.test.task.createTicket.CreateTicketAction;
 import com.link.easyai.test.validator.PhoneValidator;
 import lombok.Data;
 
 /**
- * 客服工单创建任务 DTO。
+ * 客服工单创建任务参数 DTO。
  * <p>
  * 测试场景覆盖：
  * <ul>
- *   <li>意图识别：通过 keywords/examples 匹配用户输入</li>
  *   <li>多轮参数收集：5个字段，分多轮收集</li>
  *   <li>枚举字段：ticketType / priority 自动 ENUM 校验</li>
  *   <li>自定义校验器：phone 使用 PhoneValidator 验证手机号格式</li>
  *   <li>前置依赖：description 依赖 ticketType 先收集</li>
  *   <li>必填/非必填：priority 为非必填字段</li>
- *   <li>Action 执行：所有字段收集完成后执行 CreateTicketAction</li>
- *   <li>PostAction：执行后记录日志</li>
+ *   <li>Task 执行：所有字段收集完成后执行 CreateTicketTask</li>
+ *   <li>PostTask：执行后记录日志</li>
  * </ul>
  */
 @Data
-@AiTask(
-        type = "CREATE_TICKET",
-        name = "创建客服工单",
-        description = "通过多轮对话收集工单信息，包括工单类型、客户姓名、联系电话、问题描述和优先级，最终创建工单",
-        action = CreateTicketAction.class,
-        postActions = {"DEMO_LOG1"},
-        keywords = {"创建工单", "工单", "投诉", "建议", "咨询", "我要反馈", "客服"},
-        examples = {
-                "我要创建一个工单",
-                "我想投诉一下",
-                "帮我记录一个建议",
-                "我有问题要咨询"
-        }
-)
+@AiTaskParam(type = "CREATE_TICKET")
 public class CreateTicketDto {
 
     /**

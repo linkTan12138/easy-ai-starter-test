@@ -172,8 +172,8 @@ public class TestController {
         result.put("completed", response.isCompleted());
         result.put("needMore", response.isNeedMore());
         result.put("clarification", response.isClarification());
-        if (response.getActionResult() != null) {
-            result.put("actionResult", response.getActionResult());
+        if (response.getTaskResult() != null) {
+            result.put("taskResult", response.getTaskResult());
         }
         return result;
     }
