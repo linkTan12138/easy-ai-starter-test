@@ -1,0 +1,72 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    name: easy-ai-starter-test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://gz-cdb-2pdyepq9.sql.tencentcdb.com:28051/tblog?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: '@Link123'
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    clear-checksums: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+
+# easy-ai framework
+easy-ai:
+  enabled: true
+  task-engine:
+    enabled: true
+    annotation:
+      enabled: true
+    llm:
+      provider: deepseek
+      model: deepseek-chat
+      max-retries: 2
+      initial-backoff-ms: 1000
+    snowflake:
+      worker-id: 1
+      datacenter-id: 0
+    resilience:
+      enabled: true
+      rate-limit-per-second: 20
+    history:
+      max-messages: 20
+    lifecycle:
+      timeout-minutes: 30
+      max-turns: 20
+
+# Large language model configuration
+large-language-model:
+  active: deepseek
+  deepseek:
+    api:
+      key: sk-6792b5af077540229d6677ace1320f11
+      url: https://api.deepseek.com/chat/completions
+      model: deepseek-chat
+  doubao:
+    api:
+      key: a677a788-0b1f-4258-a0af-f4742b070f18
+      url: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+      model: doubao-seed-1-6-251015
+  kimi:
+    api:
+      key: sk-ocleVYXK558Sx6kqIvFJ0u1YX0vk9sIGdChophUlNjfqusHn
+      url: https://api.moonshot.cn/v1/chat/completions
+      model: kimi-k2-turbo-preview
+
+logging:
+  level:
+    com.link.easyai: debug

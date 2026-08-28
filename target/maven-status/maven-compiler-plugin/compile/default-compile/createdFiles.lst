@@ -1,0 +1,8 @@
+com\link\easyai\test\task\CreateTicketTask.class
+com\link\easyai\test\validator\PhoneValidator.class
+com\link\easyai\test\task\LogPostAction.class
+com\link\easyai\test\controller\TestController.class
+com\link\easyai\test\EasyAiTestApplication.class
+com\link\easyai\test\task\Priority.class
+com\link\easyai\test\task\TicketType.class
+com\link\easyai\test\task\CreateTicketAction.class

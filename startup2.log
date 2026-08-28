@@ -1,0 +1,86 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.link:easy-ai-starter-test >--------------------
+[INFO] Building easy-ai-starter-test 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.4:run (default-cli) > test-compile @ easy-ai-starter-test >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ easy-ai-starter-test ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ easy-ai-starter-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ easy-ai-starter-test ---
+[INFO] skip non existing resourceDirectory C:\Users\18275\Desktop\link\project\easy-ai-starter-test\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ easy-ai-starter-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.4.4:run (default-cli) < test-compile @ easy-ai-starter-test <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.4:run (default-cli) @ easy-ai-starter-test ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2026-08-28T11:02:19.265+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Starting EasyAiTestApplication using Java 17.0.17 with PID 16268 (C:\Users\18275\Desktop\link\project\easy-ai-starter-test\target\classes started by it-just-09 in C:\Users\18275\Desktop\link\project\easy-ai-starter-test)
+2026-08-28T11:02:19.268+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-08-28T11:02:19.269+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-08-28T11:02:19.975+08:00  WARN 16268 --- [easy-ai-starter-test] [           main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.link.easyai.test]' package. Please check your configuration.
+2026-08-28T11:02:20.381+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 10010 (http)
+2026-08-28T11:02:20.392+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-28T11:02:20.393+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-08-28T11:02:20.447+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-28T11:02:20.448+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms
+2026-08-28T11:02:20.794+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-28T11:02:21.375+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37314843
+2026-08-28T11:02:21.377+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-28T11:02:22.063+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.lockservice                    : Successfully acquired change log lock
+2026-08-28T11:02:22.454+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.command                        : Clearing database change log checksums for database mysql
+2026-08-28T11:02:22.557+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.lockservice                    : Successfully released change log lock
+2026-08-28T11:02:22.575+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.command                        : Command execution complete
+2026-08-28T11:02:22.837+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
+2026-08-28T11:02:23.448+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
+2026-08-28T11:02:23.516+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-08-28T11:02:23.533+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
+2026-08-28T11:02:23.560+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.util                           : UPDATE SUMMARY
+2026-08-28T11:02:23.560+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.util                           : Run:                          0
+2026-08-28T11:02:23.560+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.util                           : Previously run:               9
+2026-08-28T11:02:23.560+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.util                           : Filtered out:                 0
+2026-08-28T11:02:23.561+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.util                           : -------------------------------
+2026-08-28T11:02:23.561+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.util                           : Total change sets:            9
+2026-08-28T11:02:23.562+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.util                           : Update summary generated
+2026-08-28T11:02:23.563+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] liquibase.command                        : Command execution complete
+2026-08-28T11:02:23.625+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.easyai.starter.config.JacksonConfig  : 初始化 jackson 配置
+2026-08-28T11:02:23.651+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] initialized with built-in rate limiting + circuit breaking
+2026-08-28T11:02:23.655+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.s.LargeLanguageModelFactory      : [LargeLanguageModelFactory] resolving provider 'deepseek'
+2026-08-28T11:02:23.656+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.s.LargeLanguageModelFactory      : [LargeLanguageModelFactory] provider 'deepseek' resolved to com.link.easyai.starter.llm.DeepSeekProvider
+2026-08-28T11:02:23.664+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.e.n.DefaultNormalizationEngine   : [NormalizationEngine] registered 0 field normalizers: []
+2026-08-28T11:02:23.707+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.e.util.SnowflakeIdGenerator      : [SnowflakeIdGenerator] initialized: workerId=1, datacenterId=0
+2026-08-28T11:02:23.730+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.config.LegacyLLMConfigBridge     : [LegacyLLMConfigBridge] 桥接 provider 'kimi': endpoint=https://api.moonshot.cn/v1/chat/completions, model=kimi-k2-turbo-preview
+2026-08-28T11:02:23.730+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.config.LegacyLLMConfigBridge     : [LegacyLLMConfigBridge] 桥接 provider 'deepseek': endpoint=https://api.deepseek.com/chat/completions, model=deepseek-chat
+2026-08-28T11:02:23.730+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.config.LegacyLLMConfigBridge     : [LegacyLLMConfigBridge] 桥接 provider 'doubao': endpoint=https://ark.cn-beijing.volces.com/api/v3/chat/completions, model=doubao-seed-1-6-251015
+2026-08-28T11:02:23.730+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.config.LegacyLLMConfigBridge     : [LegacyLLMConfigBridge] 已将旧版 large-language-model.* 配置桥接到 llm.providers.*
+2026-08-28T11:02:24.277+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 10010 (http) with context path '/'
+2026-08-28T11:02:24.289+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: file [C:\Users\18275\Desktop\link\project\easy-ai-starter-test\target\classes\com\link\easyai\test\task\CreateTicketTask.class]
+2026-08-28T11:02:24.291+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:file:/C:/Users/18275/.m2/repository/com/link/easy-ai-starter/1.0.0-SNAPSHOT/easy-ai-starter-1.0.0-SNAPSHOT.jar!/com/link/easyai/starter/engine/config/builtin/FeatureIntroTask.class]
+2026-08-28T11:02:24.305+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.e.AnnotationAiTaskConfigService  : [AiTaskConfig] 注解配置就绪: 2 个任务 [CREATE_TICKET, FEATURE_INTRO] (version=1, 数据库配置作为兜底)
+2026-08-28T11:02:24.390+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-28T11:02:24.405+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: CREATE_TICKET(String), PUBLISHED(String)
+2026-08-28T11:02:24.436+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-28T11:02:24.438+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-28T11:02:24.438+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: FEATURE_INTRO(String), PUBLISHED(String)
+2026-08-28T11:02:24.453+08:00 DEBUG 16268 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-28T11:02:24.456+08:00  INFO 16268 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Started EasyAiTestApplication in 5.69 seconds (process running for 6.017)
