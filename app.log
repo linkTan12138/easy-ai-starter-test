@@ -8,152 +8,321 @@
 
  :: Spring Boot ::                (v3.4.4)
 
-2026-08-29T17:19:10.363+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Starting EasyAiTestApplication v1.0.0 using Java 17.0.17 with PID 42680 (C:\Users\18275\Desktop\link\project\easy-ai-starter-test\target\easy-ai-starter-test-1.0.0.jar started by it-just-09 in C:\Users\18275\Desktop\link\project\easy-ai-starter-test)
-2026-08-29T17:19:10.370+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Running with Spring Boot v3.4.4, Spring v6.2.5
-2026-08-29T17:19:10.371+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : No active profile set, falling back to 1 default profile: "default"
-2026-08-29T17:19:11.856+08:00  WARN 42680 --- [easy-ai-starter-test] [           main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.link.easyai.test]' package. Please check your configuration.
-2026-08-29T17:19:12.876+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 10010 (http)
-2026-08-29T17:19:12.906+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-08-29T17:19:12.907+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2026-08-29T17:19:12.999+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-08-29T17:19:13.002+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2560 ms
-2026-08-29T17:19:14.996+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-08-29T17:19:15.687+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f0e2bdc
-2026-08-29T17:19:15.690+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-08-29T17:19:16.542+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.lockservice                    : Successfully acquired change log lock
-2026-08-29T17:19:16.920+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.command                        : Clearing database change log checksums for database mysql
-2026-08-29T17:19:17.023+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.lockservice                    : Successfully released change log lock
-2026-08-29T17:19:17.039+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.command                        : Command execution complete
-2026-08-29T17:19:17.298+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
-2026-08-29T17:19:18.112+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
-2026-08-29T17:19:18.199+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.ui                             : Database is up to date, no changesets to execute
-2026-08-29T17:19:18.228+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
-2026-08-29T17:19:18.261+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.util                           : UPDATE SUMMARY
-2026-08-29T17:19:18.262+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.util                           : Run:                          0
-2026-08-29T17:19:18.262+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.util                           : Previously run:              11
-2026-08-29T17:19:18.262+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.util                           : Filtered out:                 0
-2026-08-29T17:19:18.262+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.util                           : -------------------------------
-2026-08-29T17:19:18.262+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.util                           : Total change sets:           11
-2026-08-29T17:19:18.263+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.util                           : Update summary generated
-2026-08-29T17:19:18.263+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] liquibase.command                        : Command execution complete
-2026-08-29T17:19:18.345+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.easyai.starter.config.JacksonConfig  : ��ʼ�� jackson ����
-2026-08-29T17:19:18.380+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.e.DefaultPromptBuilder         : [PromptBuilder] registered 1 ExtractionContextProvider(s)
-2026-08-29T17:19:18.398+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] initialized with built-in rate limiting + circuit breaking
-2026-08-29T17:19:18.415+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.n.DefaultNormalizationEngine   : [NormalizationEngine] registered 3 field normalizers: [DATE, PHONE, DATE_RANGE]
-2026-08-29T17:19:18.577+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.util.SnowflakeIdGenerator      : [SnowflakeIdGenerator] initialized: workerId=1, datacenterId=0
-2026-08-29T17:19:20.202+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
-2026-08-29T17:19:20.411+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 10010 (http) with context path '/'
-2026-08-29T17:19:20.437+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/appointment/AppointmentTask.class]
-2026-08-29T17:19:20.438+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/createTicket/CreateTicketTask.class]
-2026-08-29T17:19:20.439+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/AccountCancellationTask.class]
-2026-08-29T17:19:20.439+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/AppointmentRegistrationTask.class]
-2026-08-29T17:19:20.439+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ComplaintFeedbackTask.class]
-2026-08-29T17:19:20.439+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ExpenseReimbursementTask.class]
-2026-08-29T17:19:20.439+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/InvoiceRequestTask.class]
-2026-08-29T17:19:20.441+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/LeaveApplicationTask.class]
-2026-08-29T17:19:20.441+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/LogisticsQueryTask.class]
-2026-08-29T17:19:20.441+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ModifyOrderTask.class]
-2026-08-29T17:19:20.441+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ProductConsultationTask.class]
-2026-08-29T17:19:20.441+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/RefundRequestTask.class]
-2026-08-29T17:19:20.441+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/queryBill/QueryBillTask.class]
-2026-08-29T17:19:20.443+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/lib/easy-ai-starter-1.0.0-SNAPSHOT.jar!/com/link/easyai/starter/engine/task/builtin/EchoTask.class]
-2026-08-29T17:19:20.444+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/lib/easy-ai-starter-1.0.0-SNAPSHOT.jar!/com/link/easyai/starter/engine/task/builtin/FeatureIntroTask.class]
-2026-08-29T17:19:20.453+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/appointment/dto/AppointmentDto.class]
-2026-08-29T17:19:20.454+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/createTicket/dto/CreateTicketDto.class]
-2026-08-29T17:19:20.455+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/queryBill/dto/QueryBillDto.class]
-2026-08-29T17:19:20.496+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.e.AnnotationAiTaskConfigService  : [AiTaskConfig] ע�����þ���: 15 ������ [ACCOUNT_CANCELLATION, APPOINTMENT, APPOINTMENT_REGISTRATION, COMPLAINT_FEEDBACK, CREATE_TICKET, ECHO, EXPENSE_REIMBURSEMENT, FEATURE_INTRO, INVOICE_REQUEST, LEAVE_APPLICATION, LOGISTICS_QUERY, MODIFY_ORDER, PRODUCT_CONSULTATION, QUERY_BILL, REFUND_REQUEST] (version=1, ���ݿ�������Ϊ����)
-2026-08-29T17:19:20.601+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.616+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: APPOINTMENT(String), PUBLISHED(String)
-2026-08-29T17:19:20.657+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.662+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.662+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: CREATE_TICKET(String), PUBLISHED(String)
-2026-08-29T17:19:20.680+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.682+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.683+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: ACCOUNT_CANCELLATION(String), PUBLISHED(String)
-2026-08-29T17:19:20.702+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.705+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.707+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: APPOINTMENT_REGISTRATION(String), PUBLISHED(String)
-2026-08-29T17:19:20.722+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.724+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.725+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: COMPLAINT_FEEDBACK(String), PUBLISHED(String)
-2026-08-29T17:19:20.742+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.744+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.745+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: EXPENSE_REIMBURSEMENT(String), PUBLISHED(String)
-2026-08-29T17:19:20.768+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.770+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.771+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: INVOICE_REQUEST(String), PUBLISHED(String)
-2026-08-29T17:19:20.789+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.790+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.791+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: LEAVE_APPLICATION(String), PUBLISHED(String)
-2026-08-29T17:19:20.808+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.810+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.810+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: LOGISTICS_QUERY(String), PUBLISHED(String)
-2026-08-29T17:19:20.825+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.827+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.827+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: MODIFY_ORDER(String), PUBLISHED(String)
-2026-08-29T17:19:20.845+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.846+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.846+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: PRODUCT_CONSULTATION(String), PUBLISHED(String)
-2026-08-29T17:19:20.863+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.864+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.866+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: REFUND_REQUEST(String), PUBLISHED(String)
-2026-08-29T17:19:20.884+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.886+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.887+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: QUERY_BILL(String), PUBLISHED(String)
-2026-08-29T17:19:20.905+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.905+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.907+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: ECHO(String), PUBLISHED(String)
-2026-08-29T17:19:20.922+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.925+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
-2026-08-29T17:19:20.925+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: FEATURE_INTRO(String), PUBLISHED(String)
-2026-08-29T17:19:20.942+08:00 DEBUG 42680 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
-2026-08-29T17:19:20.944+08:00  INFO 42680 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Started EasyAiTestApplication in 11.345 seconds (process running for 12.004)
-2026-08-29T17:19:37.033+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-08-29T17:19:37.033+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-08-29T17:19:37.035+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-08-29T17:19:37.172+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.test.controller.TestController     : [TestController] chatWithTaskType: taskType=QUERY_BILL, sessionId=bill-test-006, message=?2026-08-01?2026-08-15???
-2026-08-29T17:19:37.198+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==>  Preparing: INSERT INTO ai_task_lock (lock_key, lock_owner, lock_time, expire_time) VALUES (?, ?, NOW(), DATE_ADD(NOW(), INTERVAL ? SECOND))
-2026-08-29T17:19:37.202+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==> Parameters: easyai:session:bill-test-006(String), ecdd779744354339bb2e73df2e607928(String), 60(Integer)
-2026-08-29T17:19:37.240+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.insertLock    : <==    Updates: 1
-2026-08-29T17:19:37.242+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] acquired lock: key=easyai:session:bill-test-006, owner=ecdd779744354339bb2e73df2e607928
-2026-08-29T17:19:37.245+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectById                   : ==>  Preparing: SELECT session_id,current_task_id,current_task_type,status,last_active_time,turn_count,tenant_id,chat_history,create_time,update_time FROM ai_chat_session WHERE session_id=?
-2026-08-29T17:19:37.246+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectById                   : ==> Parameters: bill-test-006(String)
-2026-08-29T17:19:37.265+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectById                   : <==      Total: 0
-2026-08-29T17:19:37.269+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_session ( session_id, status, last_active_time, turn_count, tenant_id ) VALUES ( ?, ?, ?, ?, ? )
-2026-08-29T17:19:37.271+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.insert     : ==> Parameters: bill-test-006(String), 0(Integer), 2026-08-29T17:19:37.266230700(LocalDateTime), 0(Integer), 0(Long)
-2026-08-29T17:19:37.309+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.insert     : <==    Updates: 1
-2026-08-29T17:19:37.310+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.session.DefaultSessionManager  : [SessionManager] created new session: bill-test-006
-2026-08-29T17:19:37.311+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.bindTask   : ==>  Preparing: UPDATE ai_chat_session SET current_task_id = ?, current_task_type = ?, status = 1, last_active_time = NOW(), turn_count = 0, update_time = NOW() WHERE session_id = ?
-2026-08-29T17:19:37.312+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.bindTask   : ==> Parameters: 352019450947440640(String), QUERY_BILL(String), bill-test-006(String)
-2026-08-29T17:19:37.347+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.bindTask   : <==    Updates: 1
-2026-08-29T17:19:37.348+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.session.DefaultSessionManager  : [SessionManager] session=bill-test-006 bound to task=352019450947440640 (QUERY_BILL)
-2026-08-29T17:19:37.349+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.touch      : ==>  Preparing: UPDATE ai_chat_session SET last_active_time = NOW(), turn_count = turn_count + 1, update_time = NOW() WHERE session_id = ?
-2026-08-29T17:19:37.350+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.touch      : ==> Parameters: bill-test-006(String)
-2026-08-29T17:19:37.386+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.touch      : <==    Updates: 1
-2026-08-29T17:19:37.387+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] execute start: taskType=QUERY_BILL, taskId=352019450947440640
-2026-08-29T17:19:37.389+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
-2026-08-29T17:19:37.390+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352019450947440640(String)
-2026-08-29T17:19:37.408+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : <==      Total: 0
-2026-08-29T17:19:37.409+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] no task record found for taskId=352019450947440640, creating fresh state
-2026-08-29T17:19:37.410+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] config loaded: taskType=QUERY_BILL, version=1
-2026-08-29T17:19:37.411+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
-2026-08-29T17:19:37.411+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352019450947440640(String)
-2026-08-29T17:19:37.428+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : <==      Total: 0
-2026-08-29T17:19:37.428+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] no task record found for taskId=352019450947440640, creating fresh state
-2026-08-29T17:19:37.429+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] state loaded: status=COLLECTING, fields=0
-2026-08-29T17:19:37.430+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] pending fields: [billDateRange]
-2026-08-29T17:19:37.432+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectBySessionIdAndTaskId   : ==>  Preparing: SELECT * FROM ai_chat_message WHERE session_id = ? AND task_id = ? AND deleted = 0 ORDER BY create_time ASC LIMIT ?
-2026-08-29T17:19:37.432+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectBySessionIdAndTaskId   : ==> Parameters: bill-test-006(String), 352019450947440640(String), 20(Integer)
-2026-08-29T17:19:37.450+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectBySessionIdAndTaskId   : <==      Total: 0
-2026-08-29T17:19:37.470+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.e.CurrentDateContextProvider   : [CurrentDateContextProvider] �ṩ�����ı���: {currentMonth=����, currentDate=2026-08-29, currentWeekday=������}
-2026-08-29T17:19:37.472+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.e.DefaultPromptBuilder         : [PromptBuilder] built extraction prompt:
+2026-08-29T17:55:59.107+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Starting EasyAiTestApplication v1.0.0 using Java 17.0.17 with PID 55580 (C:\Users\18275\Desktop\link\project\easy-ai-starter-test\target\easy-ai-starter-test-1.0.0.jar started by it-just-09 in C:\Users\18275\Desktop\link\project\easy-ai-starter-test)
+2026-08-29T17:55:59.112+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-08-29T17:55:59.113+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-08-29T17:56:00.569+08:00  WARN 55580 --- [easy-ai-starter-test] [           main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.link.easyai.test]' package. Please check your configuration.
+2026-08-29T17:56:01.460+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 10010 (http)
+2026-08-29T17:56:01.479+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-29T17:56:01.479+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-08-29T17:56:01.526+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-29T17:56:01.527+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2346 ms
+2026-08-29T17:56:03.423+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-29T17:56:04.085+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5efe5b25
+2026-08-29T17:56:04.086+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-29T17:56:04.843+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.lockservice                    : Successfully acquired change log lock
+2026-08-29T17:56:05.220+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.command                        : Clearing database change log checksums for database mysql
+2026-08-29T17:56:05.326+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.lockservice                    : Successfully released change log lock
+2026-08-29T17:56:05.343+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.command                        : Command execution complete
+2026-08-29T17:56:05.547+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
+2026-08-29T17:56:06.241+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
+2026-08-29T17:56:06.306+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-08-29T17:56:06.325+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.changelog                      : Reading from tblog.DATABASECHANGELOG
+2026-08-29T17:56:06.348+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.util                           : UPDATE SUMMARY
+2026-08-29T17:56:06.348+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.util                           : Run:                          0
+2026-08-29T17:56:06.348+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.util                           : Previously run:              11
+2026-08-29T17:56:06.348+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.util                           : Filtered out:                 0
+2026-08-29T17:56:06.348+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.util                           : -------------------------------
+2026-08-29T17:56:06.348+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.util                           : Total change sets:           11
+2026-08-29T17:56:06.349+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.util                           : Update summary generated
+2026-08-29T17:56:06.350+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] liquibase.command                        : Command execution complete
+2026-08-29T17:56:06.427+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.easyai.starter.config.JacksonConfig  : ��ʼ�� jackson ����
+2026-08-29T17:56:06.466+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.e.DefaultPromptBuilder         : [PromptBuilder] registered 1 ExtractionContextProvider(s)
+2026-08-29T17:56:06.479+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] initialized with built-in rate limiting + circuit breaking
+2026-08-29T17:56:06.497+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.n.DefaultNormalizationEngine   : [NormalizationEngine] registered 3 field normalizers: [DATE, PHONE, DATE_RANGE]
+2026-08-29T17:56:06.632+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.util.SnowflakeIdGenerator      : [SnowflakeIdGenerator] initialized: workerId=1, datacenterId=0
+2026-08-29T17:56:08.077+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-08-29T17:56:08.180+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 10010 (http) with context path '/'
+2026-08-29T17:56:08.206+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/appointment/AppointmentTask.class]
+2026-08-29T17:56:08.206+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/createTicket/CreateTicketTask.class]
+2026-08-29T17:56:08.206+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/AccountCancellationTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/AppointmentRegistrationTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ComplaintFeedbackTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ExpenseReimbursementTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/InvoiceRequestTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/LeaveApplicationTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/LogisticsQueryTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ModifyOrderTask.class]
+2026-08-29T17:56:08.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/ProductConsultationTask.class]
+2026-08-29T17:56:08.208+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/intenttest/RefundRequestTask.class]
+2026-08-29T17:56:08.208+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/queryBill/QueryBillTask.class]
+2026-08-29T17:56:08.210+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/lib/easy-ai-starter-1.0.0-SNAPSHOT.jar!/com/link/easyai/starter/engine/task/builtin/EchoTask.class]
+2026-08-29T17:56:08.211+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/lib/easy-ai-starter-1.0.0-SNAPSHOT.jar!/com/link/easyai/starter/engine/task/builtin/FeatureIntroTask.class]
+2026-08-29T17:56:08.219+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/appointment/dto/AppointmentDto.class]
+2026-08-29T17:56:08.220+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/createTicket/dto/CreateTicketDto.class]
+2026-08-29T17:56:08.220+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.builder.AiAnnotationScanner$1  : Identified candidate component class: URL [jar:nested:/C:/Users/18275/Desktop/link/project/easy-ai-starter-test/target/easy-ai-starter-test-1.0.0.jar/!BOOT-INF/classes/!/com/link/easyai/test/task/queryBill/dto/QueryBillDto.class]
+2026-08-29T17:56:08.257+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.e.AnnotationAiTaskConfigService  : [AiTaskConfig] ע�����þ���: 15 ������ [ACCOUNT_CANCELLATION, APPOINTMENT, APPOINTMENT_REGISTRATION, COMPLAINT_FEEDBACK, CREATE_TICKET, ECHO, EXPENSE_REIMBURSEMENT, FEATURE_INTRO, INVOICE_REQUEST, LEAVE_APPLICATION, LOGISTICS_QUERY, MODIFY_ORDER, PRODUCT_CONSULTATION, QUERY_BILL, REFUND_REQUEST] (version=1, ���ݿ�������Ϊ����)
+2026-08-29T17:56:08.358+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.375+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: APPOINTMENT(String), PUBLISHED(String)
+2026-08-29T17:56:08.412+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.418+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.420+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: CREATE_TICKET(String), PUBLISHED(String)
+2026-08-29T17:56:08.441+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.443+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.444+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: ACCOUNT_CANCELLATION(String), PUBLISHED(String)
+2026-08-29T17:56:08.462+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.464+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.468+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: APPOINTMENT_REGISTRATION(String), PUBLISHED(String)
+2026-08-29T17:56:08.487+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.489+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.490+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: COMPLAINT_FEEDBACK(String), PUBLISHED(String)
+2026-08-29T17:56:08.508+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.509+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.510+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: EXPENSE_REIMBURSEMENT(String), PUBLISHED(String)
+2026-08-29T17:56:08.527+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.528+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.528+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: INVOICE_REQUEST(String), PUBLISHED(String)
+2026-08-29T17:56:08.551+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.553+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.555+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: LEAVE_APPLICATION(String), PUBLISHED(String)
+2026-08-29T17:56:08.573+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.574+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.574+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: LOGISTICS_QUERY(String), PUBLISHED(String)
+2026-08-29T17:56:08.590+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.591+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.591+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: MODIFY_ORDER(String), PUBLISHED(String)
+2026-08-29T17:56:08.608+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.609+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.610+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: PRODUCT_CONSULTATION(String), PUBLISHED(String)
+2026-08-29T17:56:08.629+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.631+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.632+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: REFUND_REQUEST(String), PUBLISHED(String)
+2026-08-29T17:56:08.648+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.650+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.651+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: QUERY_BILL(String), PUBLISHED(String)
+2026-08-29T17:56:08.666+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.668+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.669+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: ECHO(String), PUBLISHED(String)
+2026-08-29T17:56:08.685+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.688+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==>  Preparing: SELECT id,task_type,version,name,config_json,status,published_time,create_by,update_by,create_time,update_time,deleted FROM ai_task_config WHERE deleted=0 AND (task_type = ? AND status = ?) ORDER BY version DESC LIMIT 1
+2026-08-29T17:56:08.688+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : ==> Parameters: FEATURE_INTRO(String), PUBLISHED(String)
+2026-08-29T17:56:08.704+08:00 DEBUG 55580 --- [easy-ai-starter-test] [           main] c.l.e.s.m.A.selectList                   : <==      Total: 0
+2026-08-29T17:56:08.708+08:00  INFO 55580 --- [easy-ai-starter-test] [           main] c.l.easyai.test.EasyAiTestApplication    : Started EasyAiTestApplication in 10.417 seconds (process running for 10.937)
+2026-08-29T17:56:33.960+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-29T17:56:33.960+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-29T17:56:33.962+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-29T17:56:34.042+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.test.controller.TestController     : [TestController] chat: sessionId=order-test-001, message=??????
+2026-08-29T17:56:34.063+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==>  Preparing: INSERT INTO ai_task_lock (lock_key, lock_owner, lock_time, expire_time) VALUES (?, ?, NOW(), DATE_ADD(NOW(), INTERVAL ? SECOND))
+2026-08-29T17:56:34.065+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==> Parameters: easyai:session:order-test-001(String), f516972025824bb7847b716e597463e4(String), 60(Integer)
+2026-08-29T17:56:34.099+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.insertLock    : <==    Updates: 1
+2026-08-29T17:56:34.100+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] acquired lock: key=easyai:session:order-test-001, owner=f516972025824bb7847b716e597463e4
+2026-08-29T17:56:34.101+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectById                   : ==>  Preparing: SELECT session_id,current_task_id,current_task_type,status,last_active_time,turn_count,tenant_id,chat_history,create_time,update_time FROM ai_chat_session WHERE session_id=?
+2026-08-29T17:56:34.102+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectById                   : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:34.122+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectById                   : <==      Total: 0
+2026-08-29T17:56:34.125+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_session ( session_id, status, last_active_time, turn_count, tenant_id ) VALUES ( ?, ?, ?, ?, ? )
+2026-08-29T17:56:34.126+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.insert     : ==> Parameters: order-test-001(String), 0(Integer), 2026-08-29T17:56:34.123157800(LocalDateTime), 0(Integer), 0(Long)
+2026-08-29T17:56:34.165+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.insert     : <==    Updates: 1
+2026-08-29T17:56:34.165+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.session.DefaultSessionManager  : [SessionManager] created new session: order-test-001
+2026-08-29T17:56:34.165+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectLatestActiveByTenant   : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE tenant_id = ? AND status = 2 AND deleted = 0 ORDER BY update_time DESC LIMIT 1
+2026-08-29T17:56:34.165+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectLatestActiveByTenant   : ==> Parameters: 0(Long)
+2026-08-29T17:56:34.186+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectLatestActiveByTenant   : <==      Total: 1
+2026-08-29T17:56:34.234+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] found latest active task: id=2093636595928285186, taskType=CREATE_TICKET, status=COLLECTING, fields=3
+2026-08-29T17:56:34.235+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:34.235+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:34.254+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:34.255+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] loaded state: taskId=352026409562017792, status=COLLECTING, fields=3, version=1
+2026-08-29T17:56:34.255+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] calling model 'deepseek' (attempt 1/2)
+2026-08-29T17:56:34.256+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] model=deepseek, attempt=1/2
+2026-08-29T17:56:34.256+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [system] ����һ���Ի��������ж������û�֮ǰ���ڽ���һ�����񣬵��Ự�����ж��ˡ�
+�����û�������һ������Ϣ�����ж�������Ϣ���ڡ�������һ�����񡿣������ڡ�����һ��ȫ�µĻ��⡿��
+
+��һ������������:
+  ��������: CREATE_TICKET
+  ��������: CREATE_TICKET
+  ���ռ��ֶ�: phone=18249203024, ticketType=Ͷ��, customerName=link
+
+��ǰ�û���Ϣ: ??????
+
+�жϹ���:
+- ����û��ڲ�����һ����������Ĳ������������ռ�����Ϣ�����Ӧ��һ��AI������ �� continuous=true
+- ����û���ѯ����ȫ��ͬ�����顢������һ������������ȷ��ʾҪ���¿�ʼ �� continuous=false
+- �ò�׼ʱ�������� continuous=false���������������ȫ��
+
+���� JSON ��ʽ����:
+{
+  "continuous": true �� false,
+  "reason": "����ж�����"
+}
+
+2026-08-29T17:56:34.256+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [user] ??????
+2026-08-29T17:56:34.256+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.llm.DeepSeekProvider  : [DeepSeekProvider] POST https://api.deepseek.com/chat/completions model=deepseek-chat
+2026-08-29T17:56:35.526+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ��Ӧ] model=deepseek, ��Ӧ����: {
+  "continuous": false,
+  "reason": "�û���ϢΪ'??????'���޷�ʶ��Ϊ����һ��������κβ�������������������������������������Ŀ��ˡ�"
+}
+2026-08-29T17:56:35.531+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.intent.DefaultIntentEngine     : [IntentEngine] continuity judgment: continuous=false, reason=�û���ϢΪ'??????'���޷�ʶ��Ϊ����һ��������κβ�������������������������������������Ŀ��ˡ�
+2026-08-29T17:56:35.531+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiChatService      : [AiChatService] last task 352026409562017792 not continuous with current message, starting new task
+2026-08-29T17:56:35.531+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] calling model 'deepseek' (attempt 1/2)
+2026-08-29T17:56:35.531+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] model=deepseek, attempt=1/2
+2026-08-29T17:56:35.531+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [system] ����һ���ͷ���ͼ��������������û���Ϣ�ж��û���ͼ��
+
+������ͼ�б��
+- ECHO: ������ʾ
+  ����: ������ʾ�������������ռ��Ĳ����������ڲ��Ժͽ�����֤���������ն��û�չʾ��
+- COMPLAINT_FEEDBACK: Ͷ�߷���
+  ����: �ύͶ�߻���������ͷ����������
+  �û���﷽ʽʾ��: Ͷ��; ����; ��ҪͶ��; Ͷ�߽���; �������
+- APPOINTMENT: ԤԼ�Ǽ�
+  ����: ͨ���Ի��ռ��ͻ���Ϣ���Ǽ�ԤԼ��֧�ֵ绰����������Զ���׼��
+  �û���﷽ʽʾ��: ԤԼ; ��ҪԤԼ; �Ǽ�ԤԼ; ԤԼ�Ǽ�
+- EXPENSE_REIMBURSEMENT: ���ñ���
+  ����: ������ñ������ύ�����������ƾ֤
+  �û���﷽ʽʾ��: ����; ���ñ���; ��������; ��Ҫ����; ������
+- QUERY_BILL: ��ѯ�˵�
+  ����: ����ʱ�䷶Χ��ѯ�û��˵�
+  �û���﷽ʽʾ��: ���˵�; �˵�; ��ѯ�˵�; �ҵ��˵�; ���Ѽ�¼
+- CREATE_TICKET: ��������
+  ����: �����ռ����ֶδ����ͷ�����
+  �û���﷽ʽʾ��: ��������; ��ҪͶ��; ��Ҫ����
+- LEAVE_APPLICATION: �������
+  ����: ������٣������¼١����١���ٵ�����
+  �û���﷽ʽʾ��: ���; �������; ��Ҫ���; �ݼ�����; �����
+- APPOINTMENT_REGISTRATION: ԤԼ�Һ�
+  ����: ����ԤԼ�Һţ�ѡ����Һ�ҽ��
+  �û���﷽ʽʾ��: ԤԼ; �Һ�; ԤԼ�Һ�; ��Ҫ�Һ�; �Һ�ԤԼ
+- PRODUCT_CONSULTATION: ��Ʒ��ѯ
+  ����: ��ѯ��Ʒ���ܡ���񡢼۸�ʹ�÷�������Ϣ
+  �û���﷽ʽʾ��: ��Ʒ��ѯ; ��ѯ��Ʒ; ��Ʒ����; �˽��Ʒ; ��Ʒ����
+- MODIFY_ORDER: �޸Ķ���
+  ����: �޸����µ��Ķ�����Ϣ�����ջ���ַ����Ʒ������
+  �û���﷽ʽʾ��: �޸Ķ���; �Ķ���; �����޸�; ���Ķ���; �ĵ�ַ
+- FEATURE_INTRO: FEATURE_INTRO
+- ACCOUNT_CANCELLATION: �˻�ע��
+  ����: ע���û��˻������������Ϣ���˻�����
+  �û���﷽ʽʾ��: ע���˻�; ����; ע���˺�; ɾ���˻�; ע��
+- INVOICE_REQUEST: ��Ʊ����
+  ����: ���뿪�߷�Ʊ��֧����ֵ˰��ͨ��Ʊ��ר�÷�Ʊ
+  �û���﷽ʽʾ��: ��Ʊ; ����Ʊ; ���뷢Ʊ; ��Ҫ��Ʊ; ��Ʊ
+- REFUND_REQUEST: �˿�����
+  ����: ���붩���˿����ȫ���˿�����˿�˻��˿��
+  �û���﷽ʽʾ��: �˿�; �����˿�; ��Ҫ�˿�; �˻��˿�; ��Ǯ
+- LOGISTICS_QUERY: ������ѯ
+  ����: ��ѯ��������״̬�����ͽ���
+  �û���﷽ʽʾ��: ����; ������; ��ݵ�����; ������ѯ; ���ͽ���
+
+���� JSON ��ʽ����:
+{
+  "intent": "��ƥ�����ͼ type����ƥ����Ϊ null",
+  "confidence": 0.0-1.0,
+  "reason": "����ж�����"
+}
+
+2026-08-29T17:56:35.531+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [user] ??????
+2026-08-29T17:56:35.531+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.llm.DeepSeekProvider  : [DeepSeekProvider] POST https://api.deepseek.com/chat/completions model=deepseek-chat
+2026-08-29T17:56:36.085+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ��Ӧ] model=deepseek, ��Ӧ����: {"intent": null, "confidence": 0.0, "reason": "�û���Ϣ��Ϊ��������ʺţ��޷�ʶ���κ���ͼ��"}
+2026-08-29T17:56:36.087+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.intent.DefaultIntentEngine     : [IntentEngine] LLM recognized: taskType=null, confidence=0.0, source=LLM
+2026-08-29T17:56:36.104+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:36.105+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:36.122+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
+2026-08-29T17:56:36.123+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ? )
+2026-08-29T17:56:36.124+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: order-test-001(String), user(String), ??????(String), 1(Integer), 0(Long), 0(Integer)
+2026-08-29T17:56:36.157+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
+2026-08-29T17:56:36.160+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:36.160+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:36.176+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
+2026-08-29T17:56:36.177+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended user message to session=order-test-001, turn=1, total=1
+2026-08-29T17:56:36.177+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:36.178+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:36.195+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
+2026-08-29T17:56:36.195+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ? )
+2026-08-29T17:56:36.196+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: order-test-001(String), assistant(String), ��Ǹ���Ҳ�̫ȷ��������ʲô�� �����Գ��ԣ�ECHO��COMPLAINT_FEEDBACK��APPOINTMENT��EXPENSE_REIMBURSEMENT��QUERY_BILL��CREATE_TICKET��LEAVE_APPLICATION��APPOINTMENT_REGISTRATION��PRODUCT_CONSULTATION��MODIFY_ORDER��FEATURE_INTRO��ACCOUNT_CANCELLATION��INVOICE_REQUEST��REFUND_REQUEST��LOGISTICS_QUERY(String), 2(Integer), 0(Long), 0(Integer)
+2026-08-29T17:56:36.228+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
+2026-08-29T17:56:36.229+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:36.229+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:36.247+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
+2026-08-29T17:56:36.247+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended assistant message to session=order-test-001, turn=2, total=2
+2026-08-29T17:56:36.248+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==>  Preparing: DELETE FROM ai_task_lock WHERE lock_key = ? AND lock_owner = ?
+2026-08-29T17:56:36.248+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==> Parameters: easyai:session:order-test-001(String), f516972025824bb7847b716e597463e4(String)
+2026-08-29T17:56:36.284+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.releaseLock   : <==    Updates: 1
+2026-08-29T17:56:36.284+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] released lock: key=easyai:session:order-test-001, owner=f516972025824bb7847b716e597463e4
+2026-08-29T17:56:37.398+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.test.controller.TestController     : [TestController] chat: sessionId=order-test-001, message=13800138000
+2026-08-29T17:56:37.419+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==>  Preparing: INSERT INTO ai_task_lock (lock_key, lock_owner, lock_time, expire_time) VALUES (?, ?, NOW(), DATE_ADD(NOW(), INTERVAL ? SECOND))
+2026-08-29T17:56:37.419+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==> Parameters: easyai:session:order-test-001(String), 4d59ba2dc8df4dcbaf7713c322ffc1ab(String), 60(Integer)
+2026-08-29T17:56:37.453+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiTaskLockMapper.insertLock    : <==    Updates: 1
+2026-08-29T17:56:37.453+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] acquired lock: key=easyai:session:order-test-001, owner=4d59ba2dc8df4dcbaf7713c322ffc1ab
+2026-08-29T17:56:37.453+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectById                   : ==>  Preparing: SELECT session_id,current_task_id,current_task_type,status,last_active_time,turn_count,tenant_id,chat_history,create_time,update_time FROM ai_chat_session WHERE session_id=?
+2026-08-29T17:56:37.453+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectById                   : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:37.473+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectById                   : <==      Total: 1
+2026-08-29T17:56:37.473+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectLatestActiveByTenant   : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE tenant_id = ? AND status = 2 AND deleted = 0 ORDER BY update_time DESC LIMIT 1
+2026-08-29T17:56:37.473+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectLatestActiveByTenant   : ==> Parameters: 0(Long)
+2026-08-29T17:56:37.490+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectLatestActiveByTenant   : <==      Total: 1
+2026-08-29T17:56:37.491+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] found latest active task: id=2093636595928285186, taskType=CREATE_TICKET, status=COLLECTING, fields=3
+2026-08-29T17:56:37.491+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:37.492+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:37.509+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:37.510+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] loaded state: taskId=352026409562017792, status=COLLECTING, fields=3, version=1
+2026-08-29T17:56:37.510+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] calling model 'deepseek' (attempt 1/2)
+2026-08-29T17:56:37.510+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] model=deepseek, attempt=1/2
+2026-08-29T17:56:37.510+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [system] ����һ���Ի��������ж������û�֮ǰ���ڽ���һ�����񣬵��Ự�����ж��ˡ�
+�����û�������һ������Ϣ�����ж�������Ϣ���ڡ�������һ�����񡿣������ڡ�����һ��ȫ�µĻ��⡿��
+
+��һ������������:
+  ��������: CREATE_TICKET
+  ��������: CREATE_TICKET
+  ���ռ��ֶ�: phone=18249203024, ticketType=Ͷ��, customerName=link
+
+��ǰ�û���Ϣ: 13800138000
+
+�жϹ���:
+- ����û��ڲ�����һ����������Ĳ������������ռ�����Ϣ�����Ӧ��һ��AI������ �� continuous=true
+- ����û���ѯ����ȫ��ͬ�����顢������һ������������ȷ��ʾҪ���¿�ʼ �� continuous=false
+- �ò�׼ʱ�������� continuous=false���������������ȫ��
+
+���� JSON ��ʽ����:
+{
+  "continuous": true �� false,
+  "reason": "����ж�����"
+}
+
+2026-08-29T17:56:37.510+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [user] 13800138000
+2026-08-29T17:56:37.510+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.llm.DeepSeekProvider  : [DeepSeekProvider] POST https://api.deepseek.com/chat/completions model=deepseek-chat
+2026-08-29T17:56:38.203+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ��Ӧ] model=deepseek, ��Ӧ����: {
+  "continuous": true,
+  "reason": "�û�����һ�����������ṩ������Ϣ��phone=18249203024�������ڷ����µ��ֻ��ţ������ǲ���������ֻ������ֶΡ�"
+}
+2026-08-29T17:56:38.204+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.intent.DefaultIntentEngine     : [IntentEngine] continuity judgment: continuous=true, reason=�û�����һ�����������ṩ������Ϣ��phone=18249203024�������ڷ����µ��ֻ��ţ������ǲ���������ֻ������ֶΡ�
+2026-08-29T17:56:38.204+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.engine.DefaultAiChatService      : [AiChatService] recovered last task: session=order-test-001, taskId=352026409562017792, taskType=CREATE_TICKET, status=COLLECTING
+2026-08-29T17:56:38.219+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatSessionMapper.bindTask   : ==>  Preparing: UPDATE ai_chat_session SET current_task_id = ?, current_task_type = ?, status = 1, last_active_time = NOW(), turn_count = 0, update_time = NOW() WHERE session_id = ?
+2026-08-29T17:56:38.220+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatSessionMapper.bindTask   : ==> Parameters: 352026409562017792(String), CREATE_TICKET(String), order-test-001(String)
+2026-08-29T17:56:38.254+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatSessionMapper.bindTask   : <==    Updates: 1
+2026-08-29T17:56:38.254+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.session.DefaultSessionManager  : [SessionManager] session=order-test-001 bound to task=352026409562017792 (CREATE_TICKET)
+2026-08-29T17:56:38.254+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatSessionMapper.touch      : ==>  Preparing: UPDATE ai_chat_session SET last_active_time = NOW(), turn_count = turn_count + 1, update_time = NOW() WHERE session_id = ?
+2026-08-29T17:56:38.255+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatSessionMapper.touch      : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:38.288+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatSessionMapper.touch      : <==    Updates: 1
+2026-08-29T17:56:38.288+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] execute start: taskType=CREATE_TICKET, taskId=352026409562017792
+2026-08-29T17:56:38.289+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:38.289+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:38.307+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:38.308+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] loaded state: taskId=352026409562017792, status=COLLECTING, fields=3, version=1
+2026-08-29T17:56:38.308+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] config loaded: taskType=CREATE_TICKET, version=1
+2026-08-29T17:56:38.308+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:38.308+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:38.325+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:38.327+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] loaded state: taskId=352026409562017792, status=COLLECTING, fields=3, version=1
+2026-08-29T17:56:38.327+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] state loaded: status=COLLECTING, fields=3
+2026-08-29T17:56:38.328+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] pending fields: [description, priority]
+2026-08-29T17:56:38.328+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectBySessionIdAndTaskId   : ==>  Preparing: SELECT * FROM ai_chat_message WHERE session_id = ? AND task_id = ? AND deleted = 0 ORDER BY create_time ASC LIMIT ?
+2026-08-29T17:56:38.328+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectBySessionIdAndTaskId   : ==> Parameters: order-test-001(String), 352026409562017792(String), 20(Integer)
+2026-08-29T17:56:38.347+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectBySessionIdAndTaskId   : <==      Total: 0
+2026-08-29T17:56:38.349+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.e.DefaultPromptBuilder         : [PromptBuilder] built extraction prompt:
 ����һ����Ϣ��ȡ���֡�����û���Ϣ�г�ȡ�����ֶε�ֵ��ֻ���һ�� JSON ���󣬲�Ҫ����κ��������֡������ʽ��{"fields": {"�ֶδ���": ��ȡ��ֵ, ...}, "reason": "��ȡ���ݵļ��˵��"}
 
-������������Ϣ������ȡ�ο���
-- currentDate: 2026-08-29
-
 ����ȡ�ֶ��б��
-1. �ֶδ���: billDateRange������: �˵�ʱ�䷶Χ������: STRING��˵��: �û�Ҫ��ѯ���˵�ʱ�䷶Χ��ʾ��: ���� / ���� / �ϸ��� / 2026-08-01��2026-08-31 / 8��1�ŵ�8��31�ţ�����: ��ȡ�û���ȷ�����˵���ѯʱ�䷶Χ������: ֧�����ʱ�䣨���졢���졢���ܡ����ܡ����¡��ϸ��£����Զ��巶Χ������: ����û�˵'������˵�'��'������'���� billDateRange ��ֵΪ'����'������: ����û�˵'���ܵ��˵�'��'�鱾�ܵ�'���� billDateRange ��ֵΪ'����'������: �����û�ԭʼ��������Ҫ����ת��Ϊ�������ڣ�����: ����û�û����ȷʱ�䷶Χ����Ҫ�²�
+1. �ֶδ���: ticketType������: ��������(��ѯ/Ͷ��/����)������: STRING����ѡֵ: ��ѯ / Ͷ�� / ����
+2. �ֶδ���: customerName������: �ͻ�����������: STRING
+3. �ֶδ���: phone������: ��ϵ�绰������: STRING
+4. �ֶδ���: description������: ��������������: STRING
+5. �ֶδ���: priority������: ���ȼ�����/��/�ͣ�������: STRING����ѡֵ: �� / �� / ��
 
 
 Ҫ��
@@ -161,67 +330,296 @@
 - �����û�ԭʼ��������Ҫ���з�����д��ö���ֶ�����û��ᵽ��ѡ�� label �� value ���ɡ�
 - ֻ��� JSON����Ҫʹ�� markdown ����������
 
-2026-08-29T17:19:37.473+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] calling model 'deepseek' (attempt 1/2)
-2026-08-29T17:19:37.474+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] messages: count=2, user='?2026-08-01?2026-08-15???'
-2026-08-29T17:19:37.474+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.easyai.starter.llm.DeepSeekProvider  : [DeepSeekProvider] POST https://api.deepseek.com/chat/completions model=deepseek-chat
-2026-08-29T17:19:38.847+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.e.DefaultExtractionEngine      : [ExtractionEngine] LLM raw response: {"fields": {"billDateRange": "2026-08-01��2026-08-15"}, "reason": "�û���Ϣ����ȷ������˵�ʱ�䷶Χ��������ʼ����2026-08-01�ͽ�������2026-08-15��"}
-2026-08-29T17:19:38.854+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.e.DefaultExtractionEngine      : [ExtractionEngine] extracted fields: [billDateRange]
-2026-08-29T17:19:38.855+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] extraction result: success=true, fields={billDateRange=2026-08-01��2026-08-15}
-2026-08-29T17:19:38.856+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.v.DefaultValidationEngine      : [ValidationEngine] field 'billDateRange' -> VALID (value=2026-08-01��2026-08-15)
-2026-08-29T17:19:38.856+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] validation done, field states: {billDateRange=FieldState(field=billDateRange, status=VALID, rawValue=2026-08-01��2026-08-15, value=2026-08-01��2026-08-15, displayValue=null, data=null, errorCode=null, errorMessage=null, extractReason=�û���Ϣ����ȷ������˵�ʱ�䷶Χ��������ʼ����2026-08-01�ͽ�������2026-08-15��, version=1)}
-2026-08-29T17:19:38.863+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.t.normalizer.DateRangeNormalizer   : [DateRangeNormalizer] ԭʼ���: 2026-08-01��2026-08-15
-2026-08-29T17:19:38.863+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.t.normalizer.DateRangeNormalizer   : [DateRangeNormalizer] �Զ��巶Χ����: 2026-08-01��2026-08-15 -> 2026-08-01T00:00 ~ 2026-08-15T23:59:59
-2026-08-29T17:19:38.865+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.n.DefaultNormalizationEngine   : [NormalizationEngine] field 'billDateRange' normalized: 2026-08-01��2026-08-15 -> 2026-08-01��2026-08-15
-2026-08-29T17:19:38.865+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.c.DefaultCompletionEngine      : [CompletionEngine] all checks passed, task is complete
-2026-08-29T17:19:38.865+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] executing task: type=QUERY_BILL
-2026-08-29T17:19:38.866+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.mapping.DefaultMappingEngine   : [MappingEngine] assembled 1 parameters: [billDateRange]
-2026-08-29T17:19:38.866+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] assembled parameters: {billDateRange=2026-08-01��2026-08-15}
-2026-08-29T17:19:38.867+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.test.task.queryBill.QueryBillTask  : [QueryBillTask] ��ѯ�˵�, ԭʼ���=2026-08-01��2026-08-15, ��Χ=2026-08-01 00:00:00 ~ 2026-08-15 23:59:59, ����=CUSTOM
-2026-08-29T17:19:38.868+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.test.task.queryBill.QueryBillTask  : [QueryBillTask] �˵���ѯ���, ����=4, �ܽ��=985.77
-2026-08-29T17:19:38.868+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.task.DefaultTaskExecuteEngine  : [TaskExecuteEngine] task 'QUERY_BILL' finished: success=true
-2026-08-29T17:19:38.955+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
-2026-08-29T17:19:38.955+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352019450947440640(String)
-2026-08-29T17:19:38.970+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.selectByTaskId               : <==      Total: 0
-2026-08-29T17:19:38.980+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.insert                       : ==>  Preparing: INSERT INTO ai_chat_session_task ( id, task_id, type, status, task_type, config_version, ai_task_state, version, tenant_id, create_by, update_by, create_time, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
-2026-08-29T17:19:38.982+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.insert                       : ==> Parameters: 2093629641625534465(Long), 352019450947440640(String), 1(Integer), 5(Integer), QUERY_BILL(String), 1(Integer), {"taskId":"352019450947440640","taskType":"QUERY_BILL","configVersion":1,"fields":{"billDateRange":{"field":"billDateRange","status":"VALID","rawValue":"2026-08-01��2026-08-15","value":"2026-08-01��2026-08-15","displayValue":null,"data":{"normalizedBy":"DateRangeNormalizer","startTime":"2026-08-01 00:00:00","endTime":"2026-08-15 23:59:59","__normalized":true,"rangeType":"CUSTOM","rawValue":"2026-08-01��2026-08-15"},"errorCode":null,"errorMessage":null,"extractReason":"�û���Ϣ����ȷ������˵�ʱ�䷶Χ��������ʼ����2026-08-01�ͽ�������2026-08-15��","version":2}},"status":"COMPLETED","context":null,"version":0,"turnCount":1,"intentReason":null,"intentConfidence":null,"intentSource":null}(String), 0(Integer), 0(Long), 0(Long), 0(Long), 2026-08-29 17:19:38.972(Timestamp), 2026-08-29 17:19:38.972(Timestamp), 0(Integer)
-2026-08-29T17:19:39.017+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.T.insert                       : <==    Updates: 1
-2026-08-29T17:19:39.017+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] created new task record: taskId=352019450947440640, id=2093629641625534465, taskType=QUERY_BILL
-2026-08-29T17:19:39.019+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.clearTask  : ==>  Preparing: UPDATE ai_chat_session SET current_task_id = NULL, current_task_type = NULL, status = 0, turn_count = 0, update_time = NOW() WHERE session_id = ?
-2026-08-29T17:19:39.020+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.clearTask  : ==> Parameters: bill-test-006(String)
-2026-08-29T17:19:39.053+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatSessionMapper.clearTask  : <==    Updates: 1
-2026-08-29T17:19:39.053+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.session.DefaultSessionManager  : [SessionManager] session=bill-test-006 cleared task
-2026-08-29T17:19:39.053+08:00  INFO 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.engine.DefaultAiChatService      : [AiChatService] session=bill-test-006 task=352019450947440640 completed, session cleared
-2026-08-29T17:19:39.056+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
-2026-08-29T17:19:39.056+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: bill-test-006(String)
-2026-08-29T17:19:39.072+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
-2026-08-29T17:19:39.075+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, task_id, task_type, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
-2026-08-29T17:19:39.076+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: bill-test-006(String), user(String), ?2026-08-01?2026-08-15???(String), 352019450947440640(String), QUERY_BILL(String), 1(Integer), 0(Long), 0(Integer)
-2026-08-29T17:19:39.109+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
-2026-08-29T17:19:39.113+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
-2026-08-29T17:19:39.113+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==> Parameters: bill-test-006(String)
-2026-08-29T17:19:39.131+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
-2026-08-29T17:19:39.131+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended user message to session=bill-test-006, turn=1, total=1
-2026-08-29T17:19:39.132+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
-2026-08-29T17:19:39.132+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: bill-test-006(String)
-2026-08-29T17:19:39.149+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
-2026-08-29T17:19:39.151+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, task_id, task_type, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
-2026-08-29T17:19:39.152+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: bill-test-006(String), assistant(String), �˵���ѯ��ɣ�
-ʱ�䷶Χ��2026-08-01 00:00:00 ~ 2026-08-15 23:59:59
-�˵�������4 ��
-�ܽ�?985.77
+2026-08-29T17:56:38.349+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] calling model 'deepseek' (attempt 1/2)
+2026-08-29T17:56:38.349+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] model=deepseek, attempt=1/2
+2026-08-29T17:56:38.349+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [system] ����һ����Ϣ��ȡ���֡�����û���Ϣ�г�ȡ�����ֶε�ֵ��ֻ���һ�� JSON ���󣬲�Ҫ����κ��������֡������ʽ��{"fields": {"�ֶδ���": ��ȡ��ֵ, ...}, "reason": "��ȡ���ݵļ��˵��"}
 
-�˵���ϸ��
-  1. [����] �ǰͿ� - ?81.93 (BL100000)
-  2. [��ͨ] �������� - ?394.40 (BL100001)
-  3. [����] �εγ��� - ?346.22 (BL100002)
-  4. [����] �����̳� - ?163.22 (BL100003)
-(String), 352019450947440640(String), QUERY_BILL(String), 2(Integer), 0(Long), 0(Integer)
-2026-08-29T17:19:39.185+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
-2026-08-29T17:19:39.187+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
-2026-08-29T17:19:39.187+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : ==> Parameters: bill-test-006(String)
-2026-08-29T17:19:39.205+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
-2026-08-29T17:19:39.205+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended assistant message to session=bill-test-006, turn=2, total=2
-2026-08-29T17:19:39.206+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==>  Preparing: DELETE FROM ai_task_lock WHERE lock_key = ? AND lock_owner = ?
-2026-08-29T17:19:39.206+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==> Parameters: easyai:session:bill-test-006(String), ecdd779744354339bb2e73df2e607928(String)
-2026-08-29T17:19:39.238+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.m.AiTaskLockMapper.releaseLock   : <==    Updates: 1
-2026-08-29T17:19:39.238+08:00 DEBUG 42680 --- [easy-ai-starter-test] [io-10010-exec-1] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] released lock: key=easyai:session:bill-test-006, owner=ecdd779744354339bb2e73df2e607928
+����ȡ�ֶ��б��
+1. �ֶδ���: ticketType������: ��������(��ѯ/Ͷ��/����)������: STRING����ѡֵ: ��ѯ / Ͷ�� / ����
+2. �ֶδ���: customerName������: �ͻ�����������: STRING
+3. �ֶδ���: phone������: ��ϵ�绰������: STRING
+4. �ֶδ���: description������: ��������������: STRING
+5. �ֶδ���: priority������: ���ȼ�����/��/�ͣ�������: STRING����ѡֵ: �� / �� / ��
+
+
+Ҫ��
+- ����û���Ϣ��û��ĳ���ֶε�ֵ���Ͳ�Ҫ�� fields ��������ֶΣ���Ҫ���죩��
+- �����û�ԭʼ��������Ҫ���з�����д��ö���ֶ�����û��ᵽ��ѡ�� label �� value ���ɡ�
+- ֻ��� JSON����Ҫʹ�� markdown ����������
+
+2026-08-29T17:56:38.349+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [user] 13800138000
+2026-08-29T17:56:38.349+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.llm.DeepSeekProvider  : [DeepSeekProvider] POST https://api.deepseek.com/chat/completions model=deepseek-chat
+2026-08-29T17:56:38.927+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ��Ӧ] model=deepseek, ��Ӧ����: {"fields": {"phone": "13800138000"}, "reason": "�û���Ϣ��ֻ�����绰���룬δ�ṩ�����ֶ���Ϣ��"}
+2026-08-29T17:56:38.927+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.e.DefaultExtractionEngine      : [ExtractionEngine] LLM raw response: {"fields": {"phone": "13800138000"}, "reason": "�û���Ϣ��ֻ�����绰���룬δ�ṩ�����ֶ���Ϣ��"}
+2026-08-29T17:56:38.928+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.e.DefaultExtractionEngine      : [ExtractionEngine] extracted fields: [phone]
+2026-08-29T17:56:38.929+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] extraction result: success=true, fields={phone=13800138000}
+2026-08-29T17:56:38.930+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.v.DefaultValidationEngine      : [ValidationEngine] field 'phone' -> VALID (value=13800138000)
+2026-08-29T17:56:38.931+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] validation done, field states: {phone=FieldState(field=phone, status=VALID, rawValue=13800138000, value=13800138000, displayValue=null, data={}, errorCode=null, errorMessage=null, extractReason=�û���Ϣ��ֻ�����绰���룬δ�ṩ�����ֶ���Ϣ��, version=2), ticketType=FieldState(field=ticketType, status=VALID, rawValue=Ͷ��, value=COMPLAINT, displayValue=null, data={}, errorCode=null, errorMessage=null, extractReason=�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��, version=1), customerName=FieldState(field=customerName, status=VALID, rawValue=link, value=link, displayValue=null, data=null, errorCode=null, errorMessage=null, extractReason=�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��, version=1)}
+2026-08-29T17:56:38.937+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.c.DefaultCompletionEngine      : [CompletionEngine] required field 'description' is not yet completed
+2026-08-29T17:56:38.965+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:38.965+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:38.986+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:38.988+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.updateWithVersion            : ==>  Preparing: UPDATE ai_chat_session_task SET type = ?, field_list = ?, records = ?, extra_content = ?, status = ?, scenario_code = ?, task_type = ?, config_version = ?, ai_task_state = ?, tenant_id = ?, version = version + 1, update_time = NOW() WHERE id = ? AND version = ?
+2026-08-29T17:56:38.989+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.updateWithVersion            : ==> Parameters: 1(Integer), null, null, null, 2(Integer), 0(Integer), CREATE_TICKET(String), 1(Integer), {"taskId":"352026409562017792","taskType":"CREATE_TICKET","configVersion":1,"fields":{"phone":{"field":"phone","status":"VALID","rawValue":"13800138000","value":"13800138000","displayValue":null,"data":{},"errorCode":null,"errorMessage":null,"extractReason":"�û���Ϣ��ֻ�����绰���룬δ�ṩ�����ֶ���Ϣ��","version":2},"ticketType":{"field":"ticketType","status":"VALID","rawValue":"Ͷ��","value":"COMPLAINT","displayValue":null,"data":{},"errorCode":null,"errorMessage":null,"extractReason":"�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��","version":1},"customerName":{"field":"customerName","status":"VALID","rawValue":"link","value":"link","displayValue":null,"data":null,"errorCode":null,"errorMessage":null,"extractReason":"�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��","version":1}},"status":"COLLECTING","context":null,"version":1,"turnCount":3,"intentReason":"�û���ȷ���Ҫ�л���������'��������'���뵱ǰԤԼ�Ǽ�������ȫ��ͬ��","intentConfidence":0.95,"intentSource":"LLM"}(String), 0(Long), 2093636595928285186(Long), 1(Integer)
+2026-08-29T17:56:39.025+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.T.updateWithVersion            : <==    Updates: 1
+2026-08-29T17:56:39.025+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] updated task record: id=2093636595928285186, status=COLLECTING, version=2
+2026-08-29T17:56:39.027+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:39.027+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:39.045+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
+2026-08-29T17:56:39.046+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, task_id, task_type, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+2026-08-29T17:56:39.047+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: order-test-001(String), user(String), 13800138000(String), 352026409562017792(String), CREATE_TICKET(String), 3(Integer), 0(Long), 0(Integer)
+2026-08-29T17:56:39.080+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
+2026-08-29T17:56:39.081+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:39.081+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.countBySessionId             : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:39.099+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
+2026-08-29T17:56:39.099+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended user message to session=order-test-001, turn=3, total=3
+2026-08-29T17:56:39.101+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:39.101+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:39.119+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
+2026-08-29T17:56:39.120+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, task_id, task_type, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+2026-08-29T17:56:39.120+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: order-test-001(String), assistant(String), ��������
+
+���ռ���
+  ? ��ϵ�绰: 13800138000
+  ? ��������(��ѯ/Ͷ��/����): Ͷ��
+  ? �ͻ�����: link
+
+���ṩ���²�����
+  - ��������(String), 352026409562017792(String), CREATE_TICKET(String), 4(Integer), 0(Long), 0(Integer)
+2026-08-29T17:56:39.155+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
+2026-08-29T17:56:39.156+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:39.156+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.countBySessionId             : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:39.174+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
+2026-08-29T17:56:39.175+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended assistant message to session=order-test-001, turn=4, total=4
+2026-08-29T17:56:39.175+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==>  Preparing: DELETE FROM ai_task_lock WHERE lock_key = ? AND lock_owner = ?
+2026-08-29T17:56:39.175+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==> Parameters: easyai:session:order-test-001(String), 4d59ba2dc8df4dcbaf7713c322ffc1ab(String)
+2026-08-29T17:56:39.207+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.m.AiTaskLockMapper.releaseLock   : <==    Updates: 1
+2026-08-29T17:56:39.208+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-2] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] released lock: key=easyai:session:order-test-001, owner=4d59ba2dc8df4dcbaf7713c322ffc1ab
+2026-08-29T17:56:40.221+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.test.controller.TestController     : [TestController] chat: sessionId=order-test-001, message=??????
+2026-08-29T17:56:40.246+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==>  Preparing: INSERT INTO ai_task_lock (lock_key, lock_owner, lock_time, expire_time) VALUES (?, ?, NOW(), DATE_ADD(NOW(), INTERVAL ? SECOND))
+2026-08-29T17:56:40.247+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiTaskLockMapper.insertLock    : ==> Parameters: easyai:session:order-test-001(String), 7c939f385ed8459aaf85b0c74acd5879(String), 60(Integer)
+2026-08-29T17:56:40.282+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiTaskLockMapper.insertLock    : <==    Updates: 1
+2026-08-29T17:56:40.282+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] acquired lock: key=easyai:session:order-test-001, owner=7c939f385ed8459aaf85b0c74acd5879
+2026-08-29T17:56:40.282+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectById                   : ==>  Preparing: SELECT session_id,current_task_id,current_task_type,status,last_active_time,turn_count,tenant_id,chat_history,create_time,update_time FROM ai_chat_session WHERE session_id=?
+2026-08-29T17:56:40.282+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectById                   : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:40.299+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectById                   : <==      Total: 1
+2026-08-29T17:56:40.300+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:40.301+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:40.318+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:40.319+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] loaded state: taskId=352026409562017792, status=COLLECTING, fields=3, version=2
+2026-08-29T17:56:40.319+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectRecentBySessionId      : ==>  Preparing: SELECT * FROM ai_chat_message WHERE session_id = ? AND deleted = 0 ORDER BY create_time DESC LIMIT ?
+2026-08-29T17:56:40.320+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectRecentBySessionId      : ==> Parameters: order-test-001(String), 20(Integer)
+2026-08-29T17:56:40.339+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectRecentBySessionId      : <==      Total: 4
+2026-08-29T17:56:40.340+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] loaded 4 messages for session=order-test-001, first=user, last=assistant
+2026-08-29T17:56:40.341+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] calling model 'deepseek' (attempt 1/2)
+2026-08-29T17:56:40.341+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] model=deepseek, attempt=1/2
+2026-08-29T17:56:40.342+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [system] ����һ���ͷ��Ի���ͼ�ж������û����ڽ���һ���������ж��û�����һ����Ϣ�������������
+
+���жϹ��� - �ǳ���Ҫ��
+1. continue - ������ǰ�����û��ڲ��������������Ϣ���ش�AI�����ʡ��������뵱ǰ������ص����ݡ�
+   ע�⣺��ʹ��Ϣ���ᵽ������ҵ�����ʣ���"����"��"�˿�"����ֻҪ����������ǰ������������ݣ���Ӧ�� continue��
+2. switch - �л����������û���ȷ��ʾҪ����һ����ȫ��ͬ�����飬��"��Ҫ�˿�"��"���Ҳ�����"��"��Ҫ���"��
+   ע�⣺�������û�����������²������󣬶�������������ǰ��������ݡ�
+3. cancel - ȡ����ǰ�����û�˵"����"��"��Ū��"��"ȡ��"��"������"�ȡ�
+
+��Ĭ�ϲ��ԡ�
+�ò�׼ʱһ�ɷ��� continue��������л�����ȴ���ؼ�������ĺ�����صöࡣ
+
+����ǰ����������Ϣ��
+  ��������: CREATE_TICKET
+  ��������: ��������
+  ��������: �����ռ����ֶδ����ͷ�����
+  ���ռ��ֶ�: phone=13800138000, ticketType=Ͷ��, customerName=link
+  ���ռ��ֶ�: ��������(description)�����ȼ�����/��/�ͣ�(priority)
+
+����һ�� AI �ظ���
+��������
+
+���ռ���
+  ? ��ϵ�绰: 13800138000
+  ? ��������(��ѯ/Ͷ��/����): Ͷ��
+  ? �ͻ�����: link
+
+���ṩ���²�����
+  - ��������
+
+������Ի���ʷ��
+�����Ǳ��ζԻ�����ʷ��¼�����������Ĳο���ע���û�������"�ղ��Ǹ�"��"����˵��"��ָ����ʷ�е���Ϣ����
+[�û�]��??????
+[AI]����Ǹ���Ҳ�̫ȷ��������ʲô�� �����Գ��ԣ�ECHO��COMPLAINT_FEEDBACK��APPOINTMENT��EXPENSE_REIMBURSEMENT��QUERY_BILL��CREATE_TICKET��LEAVE_APPLICATION��APPOINTMENT_REGISTRATION��PRODUCT_CONSULTATION��MODIFY_ORDER��FEATURE_INTRO��ACCOUNT_CANCELLATION��INVOICE_REQUEST��REFUND_REQUEST��LOGISTICS_QUERY
+[�û�]��13800138000
+[AI]����������
+
+���ռ���
+  ? ��ϵ�绰: 13800138000
+  ? ��������(��ѯ/Ͷ��/����): Ͷ��
+  ? �ͻ�����: link
+
+���ṩ���²�����
+  - ��������
+
+
+�������������񡿣������û���ȷҪ�л�ʱ�ο���:
+- ECHO: ������ʾ
+- COMPLAINT_FEEDBACK: Ͷ�߷���
+- APPOINTMENT: ԤԼ�Ǽ�
+- EXPENSE_REIMBURSEMENT: ���ñ���
+- QUERY_BILL: ��ѯ�˵�
+- LEAVE_APPLICATION: �������
+- APPOINTMENT_REGISTRATION: ԤԼ�Һ�
+- PRODUCT_CONSULTATION: ��Ʒ��ѯ
+- MODIFY_ORDER: �޸Ķ���
+- FEATURE_INTRO: FEATURE_INTRO
+- ACCOUNT_CANCELLATION: �˻�ע��
+- INVOICE_REQUEST: ��Ʊ����
+- REFUND_REQUEST: �˿�����
+- LOGISTICS_QUERY: ������ѯ
+
+��ʾ����
+��ǰ����=�������������ռ�=�绰�����͡�����
+- �û�˵"13800138000����ҪͶ������̫��" �� continue�����ṩ�绰������������
+- �û�˵"��Ҫ��һ������" �� switch����ȷҪ���²�����
+- �û�˵"���˲�Ū��" �� cancel
+
+�û���Ϣ: ??????
+
+���� JSON ��ʽ����:
+{
+  "action": "continue | switch | cancel",
+  "intent": "����� switch����д������� type������Ϊ null",
+  "confidence": 0.0-1.0��switch ʱ����������Ŷȣ�����0.8���Ϊcontinue��,
+  "reason": "����ж����ɣ�˵��Ϊʲô��continue/switch/cancel"
+}
+
+2026-08-29T17:56:40.342+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [user] ??????
+2026-08-29T17:56:40.342+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.llm.DeepSeekProvider  : [DeepSeekProvider] POST https://api.deepseek.com/chat/completions model=deepseek-chat
+2026-08-29T17:56:41.479+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ��Ӧ] model=deepseek, ��Ӧ����: {
+  "action": "continue",
+  "intent": null,
+  "confidence": 0.9,
+  "reason": "�û���ϢΪ����'??????'������ȷ����������ȡ����ͼ���ȫ��ѡ���Ǽ�����ǰ����"
+}
+2026-08-29T17:56:41.479+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.intent.DefaultIntentEngine     : [IntentEngine] LLM context result: action=continue, taskType=CREATE_TICKET, confidence=0.9
+2026-08-29T17:56:41.495+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatSessionMapper.touch      : ==>  Preparing: UPDATE ai_chat_session SET last_active_time = NOW(), turn_count = turn_count + 1, update_time = NOW() WHERE session_id = ?
+2026-08-29T17:56:41.496+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatSessionMapper.touch      : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:41.530+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatSessionMapper.touch      : <==    Updates: 1
+2026-08-29T17:56:41.530+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] execute start: taskType=CREATE_TICKET, taskId=352026409562017792
+2026-08-29T17:56:41.530+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:41.530+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:41.551+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:41.552+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] loaded state: taskId=352026409562017792, status=COLLECTING, fields=3, version=2
+2026-08-29T17:56:41.552+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] config loaded: taskType=CREATE_TICKET, version=1
+2026-08-29T17:56:41.552+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:41.553+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:41.569+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:41.570+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] loaded state: taskId=352026409562017792, status=COLLECTING, fields=3, version=2
+2026-08-29T17:56:41.570+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] state loaded: status=COLLECTING, fields=3
+2026-08-29T17:56:41.570+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] pending fields: [description, priority]
+2026-08-29T17:56:41.570+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectBySessionIdAndTaskId   : ==>  Preparing: SELECT * FROM ai_chat_message WHERE session_id = ? AND task_id = ? AND deleted = 0 ORDER BY create_time ASC LIMIT ?
+2026-08-29T17:56:41.570+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectBySessionIdAndTaskId   : ==> Parameters: order-test-001(String), 352026409562017792(String), 20(Integer)
+2026-08-29T17:56:41.587+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectBySessionIdAndTaskId   : <==      Total: 2
+2026-08-29T17:56:41.588+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.e.DefaultPromptBuilder         : [PromptBuilder] built extraction prompt:
+����һ����Ϣ��ȡ���֡�����û���Ϣ�г�ȡ�����ֶε�ֵ��ֻ���һ�� JSON ���󣬲�Ҫ����κ��������֡������ʽ��{"fields": {"�ֶδ���": ��ȡ��ֵ, ...}, "reason": "��ȡ���ݵļ��˵��"}
+
+�����Ǳ��ζԻ�����ʷ��¼�����������Ĳο���ע���û�������"�ղ��Ǹ�"��"����˵��"��ָ����ʷ�е���Ϣ����
+[�û�]��13800138000
+[AI]����������
+
+���ռ���
+  ? ��ϵ�绰: 13800138000
+  ? ��������(��ѯ/Ͷ��/����): Ͷ��
+  ? �ͻ�����: link
+
+���ṩ���²�����
+  - ��������
+
+����ȡ�ֶ��б��
+1. �ֶδ���: ticketType������: ��������(��ѯ/Ͷ��/����)������: STRING����ѡֵ: ��ѯ / Ͷ�� / ����
+2. �ֶδ���: customerName������: �ͻ�����������: STRING
+3. �ֶδ���: phone������: ��ϵ�绰������: STRING
+4. �ֶδ���: description������: ��������������: STRING
+5. �ֶδ���: priority������: ���ȼ�����/��/�ͣ�������: STRING����ѡֵ: �� / �� / ��
+
+
+Ҫ��
+- ����û���Ϣ��û��ĳ���ֶε�ֵ���Ͳ�Ҫ�� fields ��������ֶΣ���Ҫ���죩��
+- �����û�ԭʼ��������Ҫ���з�����д��ö���ֶ�����û��ᵽ��ѡ�� label �� value ���ɡ�
+- ֻ��� JSON����Ҫʹ�� markdown ����������
+
+2026-08-29T17:56:41.588+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LlmClient] calling model 'deepseek' (attempt 1/2)
+2026-08-29T17:56:41.588+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] model=deepseek, attempt=1/2
+2026-08-29T17:56:41.589+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [system] ����һ����Ϣ��ȡ���֡�����û���Ϣ�г�ȡ�����ֶε�ֵ��ֻ���һ�� JSON ���󣬲�Ҫ����κ��������֡������ʽ��{"fields": {"�ֶδ���": ��ȡ��ֵ, ...}, "reason": "��ȡ���ݵļ��˵��"}
+
+�����Ǳ��ζԻ�����ʷ��¼�����������Ĳο���ע���û�������"�ղ��Ǹ�"��"����˵��"��ָ����ʷ�е���Ϣ����
+[�û�]��13800138000
+[AI]����������
+
+���ռ���
+  ? ��ϵ�绰: 13800138000
+  ? ��������(��ѯ/Ͷ��/����): Ͷ��
+  ? �ͻ�����: link
+
+���ṩ���²�����
+  - ��������
+
+����ȡ�ֶ��б��
+1. �ֶδ���: ticketType������: ��������(��ѯ/Ͷ��/����)������: STRING����ѡֵ: ��ѯ / Ͷ�� / ����
+2. �ֶδ���: customerName������: �ͻ�����������: STRING
+3. �ֶδ���: phone������: ��ϵ�绰������: STRING
+4. �ֶδ���: description������: ��������������: STRING
+5. �ֶδ���: priority������: ���ȼ�����/��/�ͣ�������: STRING����ѡֵ: �� / �� / ��
+
+
+Ҫ��
+- ����û���Ϣ��û��ĳ���ֶε�ֵ���Ͳ�Ҫ�� fields ��������ֶΣ���Ҫ���죩��
+- �����û�ԭʼ��������Ҫ���з�����д��ö���ֶ�����û��ᵽ��ѡ�� label �� value ���ɡ�
+- ֻ��� JSON����Ҫʹ�� markdown ����������
+
+2026-08-29T17:56:41.589+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ����] [user] ??????
+2026-08-29T17:56:41.589+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.llm.DeepSeekProvider  : [DeepSeekProvider] POST https://api.deepseek.com/chat/completions model=deepseek-chat
+2026-08-29T17:56:42.498+08:00  INFO 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.easyai.starter.engine.llm.LlmClient  : [LLM ��Ӧ] model=deepseek, ��Ӧ����: {"fields": {}, "reason": "�û���Ϣ��Ϊ'������������'��δ�ṩ�κδ���ȡ�ֶε������Ϣ��"}
+2026-08-29T17:56:42.499+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.e.DefaultExtractionEngine      : [ExtractionEngine] LLM raw response: {"fields": {}, "reason": "�û���Ϣ��Ϊ'������������'��δ�ṩ�κδ���ȡ�ֶε������Ϣ��"}
+2026-08-29T17:56:42.499+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.e.DefaultExtractionEngine      : [ExtractionEngine] extracted fields: []
+2026-08-29T17:56:42.499+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] extraction result: success=true, fields={}
+2026-08-29T17:56:42.499+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.v.DefaultValidationEngine      : [ValidationEngine] no fields extracted, nothing to validate
+2026-08-29T17:56:42.499+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.engine.DefaultAiTaskEngine       : [AiTaskEngine] validation done, field states: {phone=FieldState(field=phone, status=VALID, rawValue=13800138000, value=13800138000, displayValue=null, data={}, errorCode=null, errorMessage=null, extractReason=�û���Ϣ��ֻ�����绰���룬δ�ṩ�����ֶ���Ϣ��, version=2), ticketType=FieldState(field=ticketType, status=VALID, rawValue=Ͷ��, value=COMPLAINT, displayValue=null, data={}, errorCode=null, errorMessage=null, extractReason=�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��, version=1), customerName=FieldState(field=customerName, status=VALID, rawValue=link, value=link, displayValue=null, data=null, errorCode=null, errorMessage=null, extractReason=�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��, version=1)}
+2026-08-29T17:56:42.499+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.c.DefaultCompletionEngine      : [CompletionEngine] required field 'description' is not yet completed
+2026-08-29T17:56:42.515+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==>  Preparing: SELECT * FROM ai_chat_session_task WHERE task_id = ? AND deleted = 0 LIMIT 1
+2026-08-29T17:56:42.515+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : ==> Parameters: 352026409562017792(String)
+2026-08-29T17:56:42.534+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.selectByTaskId               : <==      Total: 1
+2026-08-29T17:56:42.535+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.updateWithVersion            : ==>  Preparing: UPDATE ai_chat_session_task SET type = ?, field_list = ?, records = ?, extra_content = ?, status = ?, scenario_code = ?, task_type = ?, config_version = ?, ai_task_state = ?, tenant_id = ?, version = version + 1, update_time = NOW() WHERE id = ? AND version = ?
+2026-08-29T17:56:42.535+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.updateWithVersion            : ==> Parameters: 1(Integer), null, null, null, 2(Integer), 0(Integer), CREATE_TICKET(String), 1(Integer), {"taskId":"352026409562017792","taskType":"CREATE_TICKET","configVersion":1,"fields":{"phone":{"field":"phone","status":"VALID","rawValue":"13800138000","value":"13800138000","displayValue":null,"data":{},"errorCode":null,"errorMessage":null,"extractReason":"�û���Ϣ��ֻ�����绰���룬δ�ṩ�����ֶ���Ϣ��","version":2},"ticketType":{"field":"ticketType","status":"VALID","rawValue":"Ͷ��","value":"COMPLAINT","displayValue":null,"data":{},"errorCode":null,"errorMessage":null,"extractReason":"�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��","version":1},"customerName":{"field":"customerName","status":"VALID","rawValue":"link","value":"link","displayValue":null,"data":null,"errorCode":null,"errorMessage":null,"extractReason":"�û���ȷ�ṩ����ϵ�绰���ͻ������͹�������ΪͶ��","version":1}},"status":"COLLECTING","context":null,"version":2,"turnCount":4,"intentReason":"�û���ȷ���Ҫ�л���������'��������'���뵱ǰԤԼ�Ǽ�������ȫ��ͬ��","intentConfidence":0.95,"intentSource":"LLM"}(String), 0(Long), 2093636595928285186(Long), 2(Integer)
+2026-08-29T17:56:42.570+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.T.updateWithVersion            : <==    Updates: 1
+2026-08-29T17:56:42.571+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.state.DefaultTaskStateManager  : [TaskStateManager] updated task record: id=2093636595928285186, status=COLLECTING, version=3
+2026-08-29T17:56:42.571+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:42.572+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:42.588+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
+2026-08-29T17:56:42.589+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, task_id, task_type, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+2026-08-29T17:56:42.590+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: order-test-001(String), user(String), ??????(String), 352026409562017792(String), CREATE_TICKET(String), 5(Integer), 0(Long), 0(Integer)
+2026-08-29T17:56:42.622+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
+2026-08-29T17:56:42.623+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:42.623+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.countBySessionId             : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:42.641+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
+2026-08-29T17:56:42.642+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended user message to session=order-test-001, turn=5, total=5
+2026-08-29T17:56:42.642+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectMaxTurnIndex           : ==>  Preparing: SELECT COALESCE(MAX(turn_index), 0) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:42.642+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectMaxTurnIndex           : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:42.659+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.selectMaxTurnIndex           : <==      Total: 1
+2026-08-29T17:56:42.660+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatMessageMapper.insert     : ==>  Preparing: INSERT INTO ai_chat_message ( session_id, role, content, task_id, task_type, turn_index, tenant_id, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+2026-08-29T17:56:42.662+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatMessageMapper.insert     : ==> Parameters: order-test-001(String), assistant(String), ��������
+
+���ռ���
+  ? ��ϵ�绰: 13800138000
+  ? ��������(��ѯ/Ͷ��/����): Ͷ��
+  ? �ͻ�����: link
+
+���ṩ���²�����
+  - ��������(String), 352026409562017792(String), CREATE_TICKET(String), 6(Integer), 0(Long), 0(Integer)
+2026-08-29T17:56:42.696+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiChatMessageMapper.insert     : <==    Updates: 1
+2026-08-29T17:56:42.697+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.countBySessionId             : ==>  Preparing: SELECT COUNT(*) FROM ai_chat_message WHERE session_id = ? AND deleted = 0
+2026-08-29T17:56:42.697+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.countBySessionId             : ==> Parameters: order-test-001(String)
+2026-08-29T17:56:42.715+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.A.countBySessionId             : <==      Total: 1
+2026-08-29T17:56:42.715+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.h.DatabaseChatHistoryManager   : [ChatHistory] appended assistant message to session=order-test-001, turn=6, total=6
+2026-08-29T17:56:42.715+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==>  Preparing: DELETE FROM ai_task_lock WHERE lock_key = ? AND lock_owner = ?
+2026-08-29T17:56:42.715+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiTaskLockMapper.releaseLock   : ==> Parameters: easyai:session:order-test-001(String), 7c939f385ed8459aaf85b0c74acd5879(String)
+2026-08-29T17:56:42.749+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.m.AiTaskLockMapper.releaseLock   : <==    Updates: 1
+2026-08-29T17:56:42.750+08:00 DEBUG 55580 --- [easy-ai-starter-test] [io-10010-exec-5] c.l.e.s.e.lock.DatabaseTaskLockManager   : [TaskLock] released lock: key=easyai:session:order-test-001, owner=7c939f385ed8459aaf85b0c74acd5879

@@ -36,6 +36,7 @@ easy-ai:
       model: deepseek-chat
       max-retries: 2
       initial-backoff-ms: 1000
+      log-enabled: true
     snowflake:
       worker-id: 1
       datacenter-id: 0
