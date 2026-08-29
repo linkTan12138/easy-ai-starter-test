@@ -1,7 +1,7 @@
 package com.link.easyai.test.task.createTicket.dto;
 
-import com.link.easyai.starter.engine.annotation.AiDependsOn;
 import com.link.easyai.starter.engine.annotation.AiField;
+import com.link.easyai.starter.engine.annotation.AiPremise;
 import com.link.easyai.starter.engine.annotation.AiTaskParam;
 import com.link.easyai.starter.engine.annotation.AiValid;
 import com.link.easyai.test.validator.PhoneValidator;
@@ -52,7 +52,7 @@ public class CreateTicketDto {
      * 这样可以避免在用户还没说清工单类型时就追问问题描述。
      */
     @AiField(name = "问题描述", required = true)
-    @AiDependsOn("ticketType")
+    @AiPremise("ticketType != null")
     private String description;
 
     /**

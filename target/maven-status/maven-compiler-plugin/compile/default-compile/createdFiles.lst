@@ -1,4 +1,5 @@
 com\link\easyai\test\normalizer\DateNormalizer.class
+com\link\easyai\test\task\appointment\dto\Confirm.class
 com\link\easyai\test\task\intenttest\AccountCancellationTask.class
 com\link\easyai\test\validator\PhoneValidator.class
 com\link\easyai\test\task\createTicket\dto\CreateTicketDto.class

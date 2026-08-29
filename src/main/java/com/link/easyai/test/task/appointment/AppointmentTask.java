@@ -40,6 +40,7 @@ public class AppointmentTask implements TaskExecutor {
         String customerName = String.valueOf(params.getOrDefault("customerName", "未知"));
         String phone = String.valueOf(params.getOrDefault("phone", ""));
         String appointmentDate = String.valueOf(params.getOrDefault("appointmentDate", ""));
+        String confirm = String.valueOf(params.getOrDefault("confirm", ""));
 
         // 模拟预约登记，生成假预约编号
         String appointmentNo = "APT" + System.currentTimeMillis() % 1000000;
@@ -49,6 +50,7 @@ public class AppointmentTask implements TaskExecutor {
                 "customerName", customerName,
                 "phone", phone,
                 "appointmentDate", appointmentDate,
+                "confirm", confirm,
                 "status", "CONFIRMED",
                 "createdAt", java.time.LocalDateTime.now().toString()
         );
