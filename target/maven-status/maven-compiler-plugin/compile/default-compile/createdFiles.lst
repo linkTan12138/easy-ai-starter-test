@@ -1,5 +1,6 @@
 com\link\easyai\test\task\intenttest\AccountCancellationTask.class
 com\link\easyai\test\validator\PhoneValidator.class
+com\link\easyai\test\task\createTicket\dto\CreateTicketDto.class
 com\link\easyai\test\task\intenttest\ExpenseReimbursementTask.class
 com\link\easyai\test\task\intenttest\ModifyOrderTask.class
 com\link\easyai\test\task\LogPostTask.class
@@ -8,8 +9,10 @@ com\link\easyai\test\task\intenttest\AppointmentRegistrationTask.class
 com\link\easyai\test\task\intenttest\ComplaintFeedbackTask.class
 com\link\easyai\test\task\createTicket\CreateTicketTask.class
 com\link\easyai\test\task\intenttest\RefundRequestTask.class
+com\link\easyai\test\task\createTicket\dto\TicketType.class
 com\link\easyai\test\controller\TestController.class
 com\link\easyai\test\task\intenttest\InvoiceRequestTask.class
 com\link\easyai\test\EasyAiTestApplication.class
+com\link\easyai\test\task\createTicket\dto\Priority.class
 com\link\easyai\test\task\intenttest\LogisticsQueryTask.class
 com\link\easyai\test\task\intenttest\ProductConsultationTask.class

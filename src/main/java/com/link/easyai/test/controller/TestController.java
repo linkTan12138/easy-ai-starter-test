@@ -172,6 +172,12 @@ public class TestController {
         result.put("completed", response.isCompleted());
         result.put("needMore", response.isNeedMore());
         result.put("clarification", response.isClarification());
+        result.put("intentReason", response.getIntentReason());
+        result.put("intentConfidence", response.getIntentConfidence());
+        result.put("intentSource", response.getIntentSource());
+        if (response.getTaskState() != null) {
+            result.put("taskState", response.getTaskState());
+        }
         if (response.getTaskResult() != null) {
             result.put("taskResult", response.getTaskResult());
         }

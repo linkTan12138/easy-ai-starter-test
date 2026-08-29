@@ -48,25 +48,36 @@ easy-ai:
       timeout-minutes: 30
       max-turns: 20
 
-# Large language model configuration
-large-language-model:
-  active: deepseek
-  deepseek:
-    api:
-      key: sk-6792b5af077540229d6677ace1320f11
-      url: https://api.deepseek.com/chat/completions
+# LLM configuration (new format)
+llm:
+  provider: deepseek
+  providers:
+    deepseek:
+      api-key: sk-6792b5af077540229d6677ace1320f11
+      endpoint: https://api.deepseek.com
       model: deepseek-chat
-  doubao:
-    api:
-      key: a677a788-0b1f-4258-a0af-f4742b070f18
-      url: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+    doubao:
+      api-key: a677a788-0b1f-4258-a0af-f4742b070f18
+      endpoint: https://ark.cn-beijing.volces.com/api/v3
       model: doubao-seed-1-6-251015
-  kimi:
-    api:
-      key: sk-ocleVYXK558Sx6kqIvFJ0u1YX0vk9sIGdChophUlNjfqusHn
-      url: https://api.moonshot.cn/v1/chat/completions
+    kimi:
+      api-key: sk-ocleVYXK558Sx6kqIvFJ0u1YX0vk9sIGdChophUlNjfqusHn
+      endpoint: https://api.moonshot.cn/v1
       model: kimi-k2-turbo-preview
 
 logging:
   level:
     com.link.easyai: debug
+
+# Actuator 监控端点（暴露框架运行指标）
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    prometheus:
+      enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
