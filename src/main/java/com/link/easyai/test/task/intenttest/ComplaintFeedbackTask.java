@@ -23,10 +23,6 @@ public class ComplaintFeedbackTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(ComplaintFeedbackTask.class);
 
-    @Override
-    public String type() {
-        return "COMPLAINT_FEEDBACK";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

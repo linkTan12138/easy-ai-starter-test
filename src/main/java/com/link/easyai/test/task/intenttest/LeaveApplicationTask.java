@@ -23,10 +23,6 @@ public class LeaveApplicationTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(LeaveApplicationTask.class);
 
-    @Override
-    public String type() {
-        return "LEAVE_APPLICATION";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

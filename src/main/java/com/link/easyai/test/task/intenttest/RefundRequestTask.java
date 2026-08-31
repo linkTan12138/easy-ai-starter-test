@@ -23,10 +23,6 @@ public class RefundRequestTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(RefundRequestTask.class);
 
-    @Override
-    public String type() {
-        return "REFUND_REQUEST";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

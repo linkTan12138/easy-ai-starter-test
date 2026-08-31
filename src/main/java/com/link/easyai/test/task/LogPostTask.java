@@ -16,10 +16,6 @@ public class LogPostTask implements PostTaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(LogPostTask.class);
 
-    @Override
-    public String type() {
-        return "DEMO_LOG";
-    }
 
     @Override
     public void execute(ExecuteContext context) {

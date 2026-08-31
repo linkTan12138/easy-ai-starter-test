@@ -23,10 +23,6 @@ public class ProductConsultationTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(ProductConsultationTask.class);
 
-    @Override
-    public String type() {
-        return "PRODUCT_CONSULTATION";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

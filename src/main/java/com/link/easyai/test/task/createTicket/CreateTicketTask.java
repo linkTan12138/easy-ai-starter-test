@@ -24,10 +24,6 @@ public class CreateTicketTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(CreateTicketTask.class);
 
-    @Override
-    public String type() {
-        return "CREATE_TICKET";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

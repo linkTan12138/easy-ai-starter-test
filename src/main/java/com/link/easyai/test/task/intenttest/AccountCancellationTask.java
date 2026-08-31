@@ -23,10 +23,6 @@ public class AccountCancellationTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(AccountCancellationTask.class);
 
-    @Override
-    public String type() {
-        return "ACCOUNT_CANCELLATION";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

@@ -26,10 +26,6 @@ public class AppointmentTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(AppointmentTask.class);
 
-    @Override
-    public String type() {
-        return "APPOINTMENT";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

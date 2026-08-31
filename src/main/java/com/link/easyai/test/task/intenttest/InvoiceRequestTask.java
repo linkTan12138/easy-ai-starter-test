@@ -23,10 +23,6 @@ public class InvoiceRequestTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(InvoiceRequestTask.class);
 
-    @Override
-    public String type() {
-        return "INVOICE_REQUEST";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

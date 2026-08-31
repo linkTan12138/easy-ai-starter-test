@@ -23,10 +23,6 @@ public class LogisticsQueryTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(LogisticsQueryTask.class);
 
-    @Override
-    public String type() {
-        return "LOGISTICS_QUERY";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

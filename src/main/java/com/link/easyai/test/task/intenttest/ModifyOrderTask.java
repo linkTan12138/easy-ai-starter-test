@@ -23,10 +23,6 @@ public class ModifyOrderTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(ModifyOrderTask.class);
 
-    @Override
-    public String type() {
-        return "MODIFY_ORDER";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

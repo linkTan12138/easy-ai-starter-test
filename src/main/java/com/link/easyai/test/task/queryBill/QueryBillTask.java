@@ -29,10 +29,6 @@ public class QueryBillTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(QueryBillTask.class);
 
-    @Override
-    public String type() {
-        return "QUERY_BILL";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {

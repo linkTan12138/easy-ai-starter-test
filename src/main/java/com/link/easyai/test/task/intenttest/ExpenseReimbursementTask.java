@@ -23,10 +23,6 @@ public class ExpenseReimbursementTask implements TaskExecutor {
 
     private static final Logger log = LoggerFactory.getLogger(ExpenseReimbursementTask.class);
 
-    @Override
-    public String type() {
-        return "EXPENSE_REIMBURSEMENT";
-    }
 
     @Override
     public TaskResult execute(ExecuteContext context) {
