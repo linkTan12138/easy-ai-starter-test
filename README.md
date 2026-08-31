@@ -171,6 +171,32 @@ easy-ai-starter-test
 }
 ```
 
+### POST /easyai/engine/chat/stream — SSE 流式聊天
+
+框架内置的 SSE 流式接口（自动意图识别），响应为 `text/event-stream`，事件序列：
+
+| 事件 | 含义 | data |
+|------|------|------|
+| `start` | 对话开始 | `{"status":"started"}` |
+| `thinking` | 处理中（意图识别/参数提取） | `{"status":"processing"}` |
+| `token` | 内容片段（按字符推送，模拟打字机） | `{"content":"..."}` |
+| `complete` | 完成，携带完整响应 | `{taskId, message, completed, needMore, clarification, taskType}` |
+| `error` | 处理异常 | `{"message":"..."}` |
+
+请求体与 `/api/test/chat` 一致（`message` / `sessionId` / `tenantId`）。
+
+> 底层 LLM 目前为同步阻塞调用，`token` 事件是"分阶段 + 按字符推送"的模拟流式。未来接入流式 LLM 后可替换为真正的 token 级流式。
+
+### 🧪 可视化 SSE 测试页
+
+启动应用后直接访问同源页面（无需跨域配置）：
+
+```
+http://localhost:10010/sse-test.html
+```
+
+功能：输入 `message` / `sessionId` / `tenantId`，内置预设场景（创建工单、预约登记、查账单、物流查询等），实时展示打字机内容、SSE 事件流日志、complete 完整响应 JSON，支持手动断开连接。
+
 ### GET /api/test/session/{sessionId} — 查看会话状态
 
 返回会话当前状态、绑定的任务、轮次、最后活跃时间。
