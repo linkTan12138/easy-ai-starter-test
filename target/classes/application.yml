@@ -48,6 +48,9 @@ easy-ai:
     lifecycle:
       timeout-minutes: 30
       max-turns: 20
+      expire-enabled: true
+      # 定时过期检查间隔（毫秒）。测试工程用 1 分钟便于观察；生产建议 10 分钟（600000）。
+      expire-interval-ms: 60000
 
 # LLM configuration (new format)
 llm:

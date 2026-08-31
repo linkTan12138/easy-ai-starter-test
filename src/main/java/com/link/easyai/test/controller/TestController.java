@@ -42,12 +42,13 @@ public class TestController {
     @PostMapping("/chat")
     public Map<String, Object> chat(@RequestBody Map<String, String> request) {
         String sessionId = request.getOrDefault("sessionId", "test-session-001");
+        String tenantId = request.getOrDefault("tenantId", "0");
         String message = request.get("message");
 
         log.info("[TestController] chat: sessionId={}, message={}", sessionId, message);
 
         TaskContext context = TaskContext.builder()
-                .tenantId(0L)
+                .tenantId(tenantId)
                 .sessionId(sessionId)
                 .data(new HashMap<>())
                 .build();
@@ -64,13 +65,14 @@ public class TestController {
             @PathVariable String taskType,
             @RequestBody Map<String, String> request) {
         String sessionId = request.getOrDefault("sessionId", "test-session-001");
+        String tenantId = request.getOrDefault("tenantId", "0");
         String message = request.get("message");
 
-        log.info("[TestController] chatWithTaskType: taskType={}, sessionId={}, message={}",
-                taskType, sessionId, message);
+        log.info("[TestController] chatWithTaskType: taskType={}, sessionId={}, tenantId={}, message={}",
+                taskType, sessionId, tenantId, message);
 
         TaskContext context = TaskContext.builder()
-                .tenantId(0L)
+                .tenantId(tenantId)
                 .sessionId(sessionId)
                 .data(new HashMap<>())
                 .build();
@@ -84,7 +86,7 @@ public class TestController {
      */
     @GetMapping("/session/{sessionId}")
     public Map<String, Object> getSession(@PathVariable String sessionId) {
-        AiChatSession session = sessionManager.loadOrCreate(sessionId, 0L);
+        AiChatSession session = sessionManager.loadOrCreate(sessionId, "0");
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("sessionId", session.getSessionId());
         result.put("status", session.getStatus());
@@ -133,21 +135,23 @@ public class TestController {
      * 重置会话。
      */
     @PostMapping("/session/{sessionId}/reset")
-    public Map<String, Object> resetSession(@PathVariable String sessionId) {
-        sessionManager.reset(sessionId);
-        return Map.of("success", true, "message", "会话已重置", "sessionId", sessionId);
+    public Map<String, Object> resetSession(@PathVariable String sessionId,
+                                            @RequestParam(required = false, defaultValue = "0") String tenantId) {
+        sessionManager.reset(sessionId, tenantId);
+        return Map.of("success", true, "message", "会话已重置", "sessionId", sessionId, "tenantId", tenantId);
     }
 
     /**
      * 取消当前任务（清除会话绑定）。
      */
     @PostMapping("/session/{sessionId}/cancel")
-    public Map<String, Object> cancelTask(@PathVariable String sessionId) {
-        AiChatSession session = sessionManager.loadOrCreate(sessionId, 0L);
+    public Map<String, Object> cancelTask(@PathVariable String sessionId,
+                                          @RequestParam(required = false, defaultValue = "0") String tenantId) {
+        AiChatSession session = sessionManager.loadOrCreate(sessionId, tenantId);
         if (session.getCurrentTaskId() != null) {
             String taskId = session.getCurrentTaskId();
-            sessionManager.clearTask(sessionId);
-            return Map.of("success", true, "message", "任务已取消", "taskId", taskId);
+            sessionManager.clearTask(sessionId, tenantId);
+            return Map.of("success", true, "message", "任务已取消", "taskId", taskId, "tenantId", tenantId);
         }
         return Map.of("success", false, "message", "当前没有活跃任务");
     }

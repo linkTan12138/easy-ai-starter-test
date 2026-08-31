@@ -53,7 +53,7 @@ class EasyAiTestApplicationTests {
     void testFullConversation() {
         String sid = "full-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         // 第1轮：触发意图识别
         ChatResponse r1 = aiChatService.chat("我要投诉", sid, ctx);
@@ -89,7 +89,7 @@ class EasyAiTestApplicationTests {
     void testEnumField() {
         String sid = "enum-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         ChatResponse r1 = aiChatService.chat("我要建议", sid, ctx);
         assertNotNull(r1.getTaskId());
@@ -110,7 +110,7 @@ class EasyAiTestApplicationTests {
     void testPhoneValidator() {
         String sid = "phone-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         // 先提供工单类型和姓名
         aiChatService.chat("我要投诉", sid, ctx);
@@ -136,7 +136,7 @@ class EasyAiTestApplicationTests {
     void testFieldDependency() {
         String sid = "dep-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         // 直接说问题描述，但ticketType还没收集，description不应被提取
         ChatResponse r = aiChatService.chat("问题是物流太慢", sid, ctx);
@@ -158,7 +158,7 @@ class EasyAiTestApplicationTests {
     void testChatWithTaskType() {
         String sid = "direct-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         ChatResponse response = aiChatService.chatWithTaskType(
                 "开始", sid, "CREATE_TICKET", ctx);
@@ -176,17 +176,17 @@ class EasyAiTestApplicationTests {
     void testSessionReset() {
         String sid = "reset-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         // 创建任务
         ChatResponse r1 = aiChatService.chat("我要投诉", sid, ctx);
         assertNotNull(r1.getTaskId());
 
         // 重置会话
-        sessionManager.reset(sid);
+        sessionManager.reset(sid, "0");
 
         // 验证会话已清除任务绑定
-        var session = sessionManager.loadOrCreate(sid, 0L);
+        var session = sessionManager.loadOrCreate(sid, "0");
         assertNull(session.getCurrentTaskId(), "重置后应清除当前任务ID");
         assertEquals(0, session.getStatus(), "重置后状态应为IDLE(0)");
     }
@@ -199,7 +199,7 @@ class EasyAiTestApplicationTests {
     void testOptionalField() {
         String sid = "optional-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         // 提供所有必填字段，但不提供priority（非必填）
         aiChatService.chat("我要咨询", sid, ctx);
@@ -228,7 +228,7 @@ class EasyAiTestApplicationTests {
         for (String keyword : keywords) {
             String sid = "intent-" + UUID.randomUUID().toString().substring(0, 8);
             TaskContext ctx = TaskContext.builder()
-                    .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                    .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
             ChatResponse r = aiChatService.chat(keyword, sid, ctx);
             assertEquals("CREATE_TICKET", r.getTaskType(),
                     "关键词 '" + keyword + "' 应识别为CREATE_TICKET");
@@ -243,7 +243,7 @@ class EasyAiTestApplicationTests {
     void testSessionContinuity() {
         String sid = "cont-" + UUID.randomUUID().toString().substring(0, 8);
         TaskContext ctx = TaskContext.builder()
-                .tenantId(0L).sessionId(sid).data(new HashMap<>()).build();
+                .tenantId("0").sessionId(sid).data(new HashMap<>()).build();
 
         ChatResponse r1 = aiChatService.chat("我要投诉", sid, ctx);
         String taskId1 = r1.getTaskId();
