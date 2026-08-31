@@ -6,9 +6,9 @@ spring:
     name: easy-ai-starter-test
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://gz-cdb-2pdyepq9.sql.tencentcdb.com:28051/tblog?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-    username: root
-    password: '@Link123'
+    url: jdbc:mysql://gz-cdb-xxxuseUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: xxx
+    password: 'xxx'
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.yaml
@@ -57,15 +57,15 @@ llm:
   provider: deepseek
   providers:
     deepseek:
-      api-key: sk-6792b5af077540229d6677ace1320f11
+      api-key: sk-xxx
       endpoint: https://api.deepseek.com
       model: deepseek-chat
     doubao:
-      api-key: a677a788-0b1f-4258-a0af-f4742b070f18
+      api-key: axxxxxx
       endpoint: https://ark.cn-beijing.volces.com/api/v3
       model: doubao-seed-1-6-251015
     kimi:
-      api-key: sk-ocleVYXK558Sx6kqIvFJ0u1YX0vk9sIGdChophUlNjfqusHn
+      api-key: sk-xxx
       endpoint: https://api.moonshot.cn/v1
       model: kimi-k2-turbo-preview
 
