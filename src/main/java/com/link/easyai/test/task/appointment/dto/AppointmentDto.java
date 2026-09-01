@@ -94,7 +94,8 @@ public class AppointmentDto {
                     "如果用户使用“明天”“后天”“下周一”等相对日期，应根据当前日期计算实际日期",
                     "如果存在多个日期，根据上下文判断实际指代预约的日期",
                     "无法明确识别预约日期时，不要猜测或编造"
-            }
+            },
+            contextVars = {"currentDate"}
     )
     private String appointmentDate;
 

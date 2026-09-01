@@ -85,7 +85,8 @@ easy-ai-starter-test
     │       ├── createTicket/                  # 场景1：创建工单（带参数）
     │       ├── appointment/                   # 场景2：预约登记（标准化 + 前置条件）
     │       ├── queryBill/                     # 场景3：查询账单（时间范围）
-    │       └── intenttest/                    # 场景4-13：意图识别稳定性测试（无参数）
+    │       ├── intenttest/                    # 场景4-13：意图识别稳定性测试（无参数）
+    │       └── scenarios/                     # 场景14-46：货代业务意图测试（无参数，33个）
     └── resources/application.yml              # 应用配置
 ```
 
@@ -110,6 +111,36 @@ easy-ai-starter-test
 | 13 | `REFUND_REQUEST` | 退款申请 | ❌ | 意图识别稳定性 |
 
 > 场景 4-13 为**纯动作场景**（无参数），仅用于验证用户表达相关需求时意图识别能否准确进入对应场景。场景 1-3 覆盖带参数收集的完整链路。
+
+## 货代业务意图测试场景（scenarios）
+
+> 依据货代业务需求整理出的 33 个**纯动作场景**（无参数、无 DTO），仅用于测试意图识别能否准确进入对应场景。场景编号沿用业务需求原文（不连续，缺 14-20 / 34 / 36 / 42 / 43）。代码位于 `task/scenarios/`，每个场景一个 `@AiTask` 执行器类，`value` 即 taskType。
+
+| 业务编号 | taskType | 场景 | 业务编号 | taskType | 场景 |
+|:---:|---------|------|:---:|---------|------|
+| 1 | `PLACE_ORDER` | 代下单 | 25 | `GET_INVOICE_TEMPLATE` | 请求发票模板 |
+| 2 | `KNOWLEDGE_QA` | 知识库答疑 | 26 | `GET_CUSTOMER_BILL` | 请求客户账单 |
+| 3 | `GET_TRANSFER_NO` | 请求转单号 | 27 | `REMOTE_AREA_QUERY` | 偏远查询 |
+| 4 | `GET_TRANSFER_LABEL` | 请求转单标签 | 28 | `GET_PRICE_LIST` | 请求报价表 |
+| 5 | `GET_WAREHOUSE_LABEL` | 请求入仓标签 | 29 | `FILE_UPLOAD` | 文件上传 |
+| 6 | `GET_TRANSFER_INVOICE` | 请求转单发票 | 30 | `HUMAN_AGENT` | 人工客服 |
+| 7 | `GET_CUSTOMER_INVOICE` | 请求客户发票 | 31 | `ORDER_UPDATE` | 修改订单 |
+| 8 | `GET_DGD` | 请求 DGD 文件 | 32 | `PRICE_QUERY` | 查价 |
+| 9 | `GET_DG_MARK` | 请求 DG 唛头文件 | 33 | `HOLD_PACKAGE` | 扣件 |
+| 10 | `GET_POD` | 请求 POD 签收单 | 35 | `PROBLEM_REPLY` | 问题件回复 |
+| 11 | `GET_CHECK_PHOTO` | 请求查货图片 | 37 | `GET_SUB_TRANSFER_NO` | 请求子转单号 |
+| 12 | `GET_WEIGHT_PHOTO` | 请求称重图片 | 38 | `QUERY_LOCAL_PHONE` | 查询当地电话 |
+| 13 | `GET_BILL_OF_LADING` | 请求提单 | 39 | `QUERY_RECEIVER_ADDRESS` | 查询收件人地址 |
+| 21 | `TRACK_QUERY` | 轨迹查询 | 40 | `SEND_PAYMENT_CODE` | 发送收款码 |
+| 22 | `DELIVERY_CONFIRM` | 收货确认 | 41 | `UNHOLD_PACKAGE` | 取消暂扣 |
+| 23 | `PROBLEM_QUERY` | 问题件查询 | 44 | `GET_ITEM_DETAIL` | 请求单件明细 |
+| 24 | `TASK_CANCEL` | 任务终止 | | | |
+
+> **说明：**
+> - 场景 31「修改订单」与既有 `MODIFY_ORDER` 语义重叠，为避开 taskType 全局冲突，本场景使用 `ORDER_UPDATE`。
+> - 场景 21「轨迹查询」与既有 `LOGISTICS_QUERY` 语义相近但独立保留（`TRACK_QUERY`）。
+> - 场景 35「问题件回复」依赖"引用消息 + 引用内容含特定文案"的触发方式，纯文本意图识别仅以关键词覆盖，接入方若需精确触发需在消息入参中附带引用上下文。
+
 
 ## API 接口
 
